@@ -22,5 +22,3 @@
 * Too many commits in a single PR (meaning too much to review)
 * Code in a commit does not match commit message
 * Commit message is vague
-
-#THE END
