@@ -12,6 +12,8 @@
     <!-- <link rel='stylesheet' id='coding-forecast-css-0' href='styles/coding-forecast.css' type='text/css' media='all' /> -->
     <link rel='stylesheet' id='animated-weather-icons-css-0' href='styles/animated-weather-icons.css' type='text/css'
         media='all' />
+    <link rel='stylesheet' id='comcastify-toggle-css-0' href='styles/comcastify-toggle.css' type='text/css'
+        media='all' />
     <script type='text/javascript' src='https://s.aolcdn.com/ads/adsWrapper.js'></script>
     <script type='text/javascript'>
         try { adsEnableSandbox(); } catch (e) { }
@@ -1713,6 +1715,29 @@
     <!-- include Weather API and icons scripts -->
     <script type='text/javascript' src='js/skycons.js'></script>
     <script type='text/javascript' src='js/coding-forecast.js'></script>
+    <!-- include Comcastify scripts and load it on document ready -->
+    <script type='text/javascript' src='js/comcastify.js'></script>
+    <script type='text/javascript' src='js/comcastify-toggle.js'></script>
+    <script>
+        window.onload = comcastifyjs.fixMyImagesLoadingSoFast({
+            boxColor: 'gray',
+            // Define what percentage of images visibly load
+            loadMaxPercent: 0.75,
+            // Define how fast the images load (higher number is slower)
+            loadSpeed: 1000,
+            loadIncrement: 5
+        });
+        // console.log(comcastifyToggleJS);
+        // All variable availabe are listed below
+        // elements: args.elements || document.querySelectorAll('img:not([class="progressiveJPEGemulator"])'),
+        //   boxColor: args.boxColor || '#000000',                             // color of box overlay
+        //   loadMaxPercent: args.loadMaxPercent || 0.0,                       // max percentage to load images
+        //   loadSpeed: args.loadSpeed || 500,                                 // how often in ms to pass
+        //   randLoadIncrement: args.randLoadIncrement || false,               // true to randomize load increment
+        //   loadIncrement: args.loadIncrement || 1,                           // pixels to load per pass
+        //   randomPause: args.randomPause || 0.0,                             // probability of skipping a pass
+        //   progressiveJPEG: args.progressiveJPEG || false        // enable progressive JPEG emulation        
+    </script>
 </body>
 
 </html>
