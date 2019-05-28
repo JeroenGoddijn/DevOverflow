@@ -9,7 +9,8 @@
     <title>DevOverflow</title>
 
     <link rel='stylesheet' id='all-css-0' href='inspiration/techcrunch.css' type='text/css' media='all' />
-    <!-- <link rel='stylesheet' id='coding-forecast-css-0' href='styles/coding-forecast.css' type='text/css' media='all' /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' id='animated-weather-icons-css-0' href='styles/animated-weather-icons.css' type='text/css'
         media='all' />
     <link rel='stylesheet' id='comcastify-toggle-css-0' href='styles/comcastify-toggle.css' type='text/css'
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+
     <div id="root">
         <div>
             <div class="container--tc-magazine" style="margin-top: 285px;"><svg class="hidden-defs">
@@ -1709,6 +1711,7 @@
             </div>
         </div>
     </div>
+
     <!-- include JQuery 3.4.1 -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -1717,7 +1720,9 @@
     <script type='text/javascript' src='js/coding-forecast.js'></script>
     <!-- include Comcastify scripts and load it on document ready -->
     <script type='text/javascript' src='js/comcastify.js'></script>
-    <script type='text/javascript' src='js/comcastify-toggle.js'></script>
+    <!-- remove AdChoices overlay -->
+    <script type='text/javascript' src='js/remove-adchoices.js'></script>
+
     <script>
         window.onload = comcastifyjs.fixMyImagesLoadingSoFast({
             boxColor: 'gray',

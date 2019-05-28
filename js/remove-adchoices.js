@@ -1,0 +1,1 @@
+$("[id^='atwAdFrame']").empty();
