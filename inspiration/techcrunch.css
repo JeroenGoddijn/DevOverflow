@@ -1172,11 +1172,11 @@ pre.wp-block-verse {
 }
 
 .has-light-green-cyan-background-color.has-light-green-cyan-background-color {
-    background-color: #7bdcb5
+    background-color: #dcaa7b
 }
 
 .has-vivid-green-cyan-background-color.has-vivid-green-cyan-background-color {
-    background-color: #00d084
+    background-color: #d07600
 }
 
 .has-pale-cyan-blue-background-color.has-pale-cyan-blue-background-color {
@@ -1220,7 +1220,7 @@ pre.wp-block-verse {
 }
 
 .has-vivid-green-cyan-color.has-vivid-green-cyan-color {
-    color: #00d084
+    color: #d09900
 }
 
 .has-pale-cyan-blue-color.has-pale-cyan-blue-color {
@@ -2221,7 +2221,7 @@ div[class*=wp-caption],img {
 }
 
 .text--green {
-    color: #00a562
+    color: #a56b00
 }
 
 .text--black {
@@ -2549,7 +2549,7 @@ body div#actionbar {
 }
 
 .button--primary.button--green,.button:hover:not([disabled]).button--green {
-    background-color: #00a562;
+    background-color: #a57100;
     color: #fff
 }
 
@@ -2603,17 +2603,17 @@ body div#actionbar {
 }
 
 .button--primary.button--green-gradient,.button:hover:not([disabled]).button--green-gradient {
-    background: #00d301;
-    background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
-    background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
-    background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562)
+    background: #d38900;
+    background: -webkit-linear-gradient(-196deg,#d38900,#c28536 50%,#a56300);
+    background: -webkit-linear-gradient(164deg,#d38900,#c29636 50%,#a56300);
+    background: linear-gradient(286deg,#d39000,#c29136 50%,#a56b00)
 }
 
 .button--primary.button--green-gradient:active,.button:hover:not([disabled]).button--green-gradient:active {
-    background: #00c901;
-    background: -webkit-linear-gradient(-196deg,#00c901,#34ba70 50%,#009b5c);
-    background: -webkit-linear-gradient(164deg,#00c901,#34ba70 50%,#009b5c);
-    background: linear-gradient(286deg,#00c901,#34ba70 50%,#009b5c)
+    background: #c97200;
+    background: -webkit-linear-gradient(-196deg,#c97200,#ba6a34 50%,#9b5300);
+    background: -webkit-linear-gradient(164deg,#c96100,#ba7b34 50%,#9b5d00);
+    background: linear-gradient(286deg,#c97900,#ba7534 50%,#9b4b00)
 }
 
 .button--primary.button--gold-gradient,.button:hover:not([disabled]).button--gold-gradient {
@@ -2646,8 +2646,8 @@ body div#actionbar {
 }
 
 .button--secondary.button--green {
-    border-color: #00a562;
-    color: #00a562
+    border-color: #a55d00;
+    color: #a56b00
 }
 
 .button--secondary.button--grey {
@@ -2676,9 +2676,9 @@ body div#actionbar {
 }
 
 .button--secondary.button--green-gradient {
-    color: #00a562;
-    border-color: #00a562;
-    border-image-source: linear-gradient(79deg,#00d301,#36c275 50%,#00a562);
+    color: #a55d00;
+    border-color: #a55d00;
+    border-image-source: linear-gradient(79deg,#d38900,#c27a36 50%,#a57100);
     border-image-slice: 1
 }
 
@@ -2686,7 +2686,7 @@ body div#actionbar {
     color: #fff;
     -webkit-text-fill-color: #fff;
     text-fill-color: #fff;
-    border-image-source: linear-gradient(286deg,#00d301,#36c275 50%,#00a562)
+    border-image-source: linear-gradient(286deg,#d37f00,#c28536 50%,#a57100)
 }
 
 .button--secondary.button--green-gradient[disabled] {
@@ -2759,7 +2759,7 @@ body div#actionbar {
 }
 
 .button.button--green:hover:after {
-    background-color: #00a562
+    background-color: #a57100
 }
 
 .button.button--red:hover:after {
@@ -2771,10 +2771,10 @@ body div#actionbar {
 }
 
 .button.button--green-gradient:hover:after {
-    background: #00d301;
-    background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
-    background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
-    background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562)
+    background: #d39000;
+    background: -webkit-linear-gradient(-196deg,#d38900,#c28a36 50%,#a56300);
+    background: -webkit-linear-gradient(164deg,#d38900,#c28a36 50%,#a56300);
+    background: linear-gradient(286deg,#d39000,#c28136 50%,#a56300)
 }
 
 .button.button--gold-gradient:hover:after {
@@ -2877,7 +2877,7 @@ body div#actionbar {
 
 .close-button .progress-circle {
     fill: transparent;
-    stroke: #00a562;
+    stroke: #a56300;
     stroke-width: 5;
     stroke-dashoffset: 0
 }
@@ -2933,7 +2933,7 @@ body div#actionbar {
     50% {
         width: 2.7em;
         height: 2.7em;
-        background-color: #00a562
+        background-color: #a56300
     }
 
     to {
@@ -2951,7 +2951,7 @@ body div#actionbar {
     50% {
         width: 2.7em;
         height: 2.7em;
-        background-color: #00a562
+        background-color: #a56b00
     }
 
     to {
@@ -3091,7 +3091,7 @@ body div#actionbar {
 }
 
 .crunchbase-link.active,.crunchbase-link:hover {
-    color: #00a562
+    color: #a57100
 }
 
 .crunchbase-tooltip-indicator {
@@ -3121,8 +3121,8 @@ body div#actionbar {
 }
 
 a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
-    background: -webkit-linear-gradient(135deg,#00d301,#36c275 50.5%,#00a562);
-    background: linear-gradient(315deg,#00d301,#36c275 50.5%,#00a562)
+    background: -webkit-linear-gradient(135deg,#d39000,#c28536 50.5%,#a56b00);
+    background: linear-gradient(315deg,#d39000,#c28536 50.5%,#a56b00)
 }
 
 .data-grid {
@@ -3607,21 +3607,21 @@ a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
 }
 
 .button--secondary.button--green-gradient,.event-page-layout--exhibitor-directory .exhibitor-list .exhibitor__content .exhibitor__industry .exhibitor__industry-label,.gradient-text--green-gradient,.gradient-text--green-reverse-gradient,.page-brand-studio .bs__column__heading,.site-navigation__battlefield .desktop-nav .apply-now-link,.widget--newsletter-signup .button {
-    color: #00a562
+    color: #a55000
 }
 
 @supports (text-fill-color:transparent) or (-webkit-text-fill-color:transparent) {
     .button--secondary.button--green-gradient,.event-page-layout--exhibitor-directory .exhibitor-list .exhibitor__content .exhibitor__industry .exhibitor__industry-label,.gradient-text--green-gradient,.page-brand-studio .bs__column__heading,.site-navigation__battlefield .desktop-nav .apply-now-link,.widget--newsletter-signup .button {
-        background: #00d301;
-        background: -webkit-linear-gradient(11deg,#00d301,#36c275 50%,#00a562);
-        background: linear-gradient(79deg,#00d301,#36c275 50%,#00a562)
+        background: #d37000;
+        background: -webkit-linear-gradient(11deg,#d3700094,#c27a36 50%,#a56300);
+        background: linear-gradient(79deg,#d37f00,#c27a36 50%,#a56300)
     }
 
     .gradient-text--green-reverse-gradient,.green-reverse-gradient {
-        background: #00d301;
-        background: -webkit-linear-gradient(-189deg,#00d301,#36c275 50%,#00a562);
-        background: -webkit-linear-gradient(171deg,#00d301,#36c275 50%,#00a562);
-        background: linear-gradient(279deg,#00d301,#36c275 50%,#00a562)
+        background: #d37f00;
+        background: -webkit-linear-gradient(-189deg,#d37f00,#c28136 50%,#a55d00);
+        background: -webkit-linear-gradient(171deg,#d37800,#c28136 50%,#a55d00);
+        background: linear-gradient(279deg,#d37000,#c26e36 50%,#a55d00)
     }
 
     .button--secondary.button--gold-gradient,.gold-gradient,.gradient-text--gold-gradient {
@@ -3657,7 +3657,7 @@ a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
 }
 
 .icon--green * {
-    fill: #00a562
+    fill: #a56300
 }
 
 .icon--white * {
@@ -3688,7 +3688,7 @@ a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
 }
 
 .icon--camera.icon--green *,.icon--search.icon--green * {
-    stroke: #00a562
+    stroke: #d37000
 }
 
 .icon--camera.icon--grey *,.icon--search.icon--grey * {
@@ -3784,7 +3784,7 @@ a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
 .load-more {
     font-size: 22px;
     font-size: 1.375rem;
-    color: #00a562;
+    color: #d37000;
     line-height: 1.09;
     letter-spacing: -.7px;
     font-family: aktiv-grotesk,sans-serif;
@@ -4884,7 +4884,7 @@ svg .path line,svg .path path {
 }
 
 .tooltip-link.active,.tooltip-link:hover {
-    color: #00a562
+    color: #d37000
 }
 
 .tooltip-indicator {
@@ -4916,8 +4916,8 @@ svg .path line,svg .path path {
 }
 
 a.active .tooltip-indicator,a:hover .tooltip-indicator {
-    background: -webkit-linear-gradient(135deg,#00d301,#36c275 50.5%,#00a562);
-    background: linear-gradient(315deg,#00d301,#36c275 50.5%,#00a562)
+    background: -webkit-linear-gradient(135deg,#d38900,#c28136 50.5%,#a55d00);
+    background: linear-gradient(315deg,#d37f00,#c27a36 50.5%,#a56300)
 }
 
 .cb-unicorn-leaderboard-table .data-grid-filters {
@@ -5073,7 +5073,7 @@ a.active .tooltip-indicator,a:hover .tooltip-indicator {
 }
 
 .cb-unicorn-leaderboard-table .cb-valuation-increase {
-    color: #00a562
+    color: #d37000
 }
 
 .cb-unicorn-leaderboard-table .cb-valuation-decrease {
@@ -5514,7 +5514,7 @@ a.active .tooltip-indicator,a:hover .tooltip-indicator {
 }
 
 .cb-unicorn-chart__chart-row--acquired {
-    color: #00a562
+    color: #d37000
 }
 
 .cb-unicorn-chart__chart-tooltip {
@@ -5598,7 +5598,7 @@ a.active .tooltip-indicator,a:hover .tooltip-indicator {
 }
 
 .cb-unicorn-chart__timeline-row--8yr {
-    color: #00a562
+    color: #d37000
 }
 
 .cb-unicorn-chart__timeline-row--10yr {
@@ -9429,8 +9429,8 @@ button.article-block__link {
 }
 
 .homepage__event-promo {
-    background: -webkit-linear-gradient(135deg,#00d301,#36c275 50.5%,#00a562);
-    background: linear-gradient(315deg,#00d301,#36c275 50.5%,#00a562);
+    background: -webkit-linear-gradient(135deg,#be7302,#a87425 50.5%,#cab8a2);
+    background: linear-gradient(315deg,#b66202,#a86a19 50.5%,#d89736);
     font-size: 18px;
     font-size: 1.125rem;
     width: 100%;
