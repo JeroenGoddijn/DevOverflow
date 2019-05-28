@@ -13321,8 +13321,9 @@ fieldset {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-width: 212px;
     min-height: 350px;
-    margin-right: 2em
+    margin-right: 4em
 }
 
 .upcoming-events__item__body {
@@ -13376,7 +13377,7 @@ fieldset {
 .upcoming-events__item__footer:before {
     content: " ";
     display: block;
-    border: 2px solid #00a562;
+    border: 2px solid #d38900;
     width: 60px;
     height: 2px;
     margin-bottom: 20px
