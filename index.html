@@ -9,14 +9,20 @@
     <title>DevOverflow</title>
 
     <link rel='stylesheet' id='all-css-0' href='inspiration/techcrunch.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' id='animated-weather-icons-css-0' href='styles/animated-weather-icons.css' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='comcastify-toggle-css-0' href='styles/comcastify-toggle.css' type='text/css'
+        media='all' />
     <script type='text/javascript' src='https://s.aolcdn.com/ads/adsWrapper.js'></script>
     <script type='text/javascript'>
         try { adsEnableSandbox(); } catch (e) { }
     </script>
-
 </head>
 
 <body>
+
     <div id="root">
         <div>
             <div class="container--tc-magazine" style="margin-top: 285px;"><svg class="hidden-defs">
@@ -47,13 +53,12 @@
                     </defs>
                 </svg>
                 <div></div>
-                <div class="ad-unit ad-unit__billboard ad-unit--fixed" style="top: 0px; border-style:solid; border-color: purple; border-width:3px;">
-                    <div class="ad-unit__ad ad-unit__leaderboard" id="tc-ad-leaderboard"><iframe itemscope=""
-                            itemtype="https://schema.org/WPAdBlock" tabindex="-1" width="970" height="250" title="Ad"
-                            marginwidth="0" marginheight="0" allowtransparency="true" frameborder="0" scrolling="no"
-                            sandbox="allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
-                            id="atwAdFrame0" name="atwAdFrame0" banid="10861234|26621535" class="uac_970x250"></iframe>
-                        <div id="atwAdFrame0EAN"
+                <div class="ad-unit ad-unit__billboard ad-unit--fixed"
+                    style="top: 0px; border-style:solid; border-color: purple; border-width:3px;">
+
+                    <div class="ad-unit__ad ad-unit__leaderboard" id="tc-ad-leaderboard"><img
+                            src="images/homebrewad.jpg" alt="" style="width:970; height:250">
+                        <div id=" atwAdFrame0EAN"
                             style="width: 970px; height: 15px; top: 0px; left: 0px; margin: 0px auto; position: relative;">
                             <a id="atwAdFrame0EANA"
                                 style="position:absolute;right:0px;z-index:4999;margin:0 auto;width:77px;height:15px"
@@ -82,54 +87,102 @@
                                     href="//oidc.techcrunch.com/login/?dest=https%3A%2F%2Ftechcrunch.com%2F">Login</a>
                             </div>
                         </div>
+                        <!-- Nav stuff -->
                         <div class="desktop-nav__body">
                             <ul class="menu navigation__main-menu">
-                                <li class="menu__item "><a href="/startups/">Startups</a></li>
-                                <li class="menu__item "><a href="/apps/">Apps</a></li>
-                                <li class="menu__item "><a href="/gadgets/">Gadgets</a></li>
-                                <li class="menu__item "><a href="/video/">Videos</a></li>
-                                <li class="menu__item "><a href="/pages/podcasts/">Audio</a></li>
-                                <li class="menu__item  menu__item--extra-crunch menu__item--extra-crunch__main"><a
-                                        href="/extracrunch/">Extra Crunch</a></li>
-                                <li class="menu__item "><a href="/">—</a></li>
-                                <li class="menu__item "><a href="/events/">Events</a></li>
-                                <li class="menu__item "><a href="/pages/advertisement-events-calendar/">Advertise</a>
+                                <li class="menu__item "><a href="#">Hot Stories</a></li>
+                                <li class="menu__item "><a href="#">The Latest</a></li>
+                                <li class="menu__item "><a href="#">Sign up for Stuff</a></li>
+                                <li class="menu__item "><a href="#">Stocks</a></li>
+                                <li class="menu__item "><a href="#">Audio</a></li>
+                                <li class="menu__item "><a href="#">—</a></li>
+                                <li class="menu__item "><a href="#">Stuff</a></li>
+                                <li class="menu__item "><a href="#">Pay Us</a>
                                 </li>
-                                <li class="menu__item "><a href="http://crunchbase.com">Crunchbase</a></li>
-                                <li class="menu__item "><a href="/">More</a></li>
+                                <li class="menu__item "><a href="#">Join Our Cult</a></li>
+                                <li class="menu__item "><a href="#">More</a></li>
                             </ul>
-                            <div class="search-field"><label for="nav-search-field">Search<svg
-                                        class="icon icon--search icon--grey " viewBox="0 0 20 20" version="1.1"
-                                        aria-labelledby="title">
-                                        <title>search</title>
-                                        <g>
-                                            <ellipse cx="9.1" cy="8.7" rx="7" ry="7.2"></ellipse>
-                                            <path d="M18.9,18.7l-4.7-4.8"></path>
-                                        </g>
-                                    </svg></label></div>
                             <ul class="menu my-lists-container"></ul>
-                            <ul class="menu navigation__trending-topics">
-                                <li class="menu__item "><a href="/ecommerce/">
-                                        eCommerce</a></li>
-                                <li class="menu__item "><a href="/transportation/">Transportation
-                                    </a></li>
-                                <li class="menu__item "><a href="/tag/google/">Google
-                                    </a></li>
-                                <li class="menu__item "><a href="/tag/amazon/">Amazon
-                                    </a></li>
-                            </ul>
+
+                                <!-- Facebook -->
+                                <a class="resp-sharing-button__link" href="https://facebook.com" target="_blank"
+                                    rel="noopener" aria-label="Share on Facebook">
+                                    <div
+                                        class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
+                                        <div aria-hidden="true"
+                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                            style="width: 22%">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Twitter -->
+                                <a class="resp-sharing-button__link" href="https://twitter.com" target="_blank"
+                                    rel="noopener" aria-label="Share on Twitter">
+                                    <div
+                                        class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                                        <div aria-hidden="true"
+                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                            style="width: 22%">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Google+ -->
+                                <a class="resp-sharing-button__link" href="https://plus.google.com" target="_blank"
+                                    rel="noopener" aria-label="Share on Google+">
+                                    <div
+                                        class="resp-sharing-button resp-sharing-button--google resp-sharing-button--large">
+                                        <div aria-hidden="true"
+                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                            style="width: 22%">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Pinterest -->
+                                <a class="resp-sharing-button__link" href="https://pinterest.com/" target="_blank"
+                                    rel="noopener" aria-label="Share on Pinterest">
+                                    <div
+                                        class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large">
+                                        <div aria-hidden="true"
+                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                            style="width: 22%">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
                         </div>
                     </div>
                 </header>
                 <div id="tc-main-content">
-                    <div class="content-wrap" style="border-style:solid; border-color: yellow; border-width:3px;"> <!-- Feature Content Wrapper -->
+                    <div class="content-wrap" style="border-style:solid; border-color: yellow; border-width:3px;">
+                        <!-- Feature Content Wrapper -->
                         <div class="content">
                             <div>
                                 <div class="feature-island__posts"></div>
                                 <div class="feature-island">
                                     <div class="feature-island-main-block fi-main-block--unread">
                                         <h2 class="fi-main-block__title"><a class="post-block__title__link"
-                                                href="/2019/05/21/three-point-five-unicorns/">2 White guys develop App now valued at $3.5B and raise another $292M from 3 other (older) white guys</a></h2>
+                                                href="/2019/05/21/three-point-five-unicorns/">2 White guys develop App
+                                                now valued at $3.5B and raise another $292M from 3 other (older) white
+                                                guys</a></h2>
+
                                         <p class="fi-main-block__byline"><span><a aria-label="Posts by Steve O'Hater"
                                                     href="/author/steve-o-hear/">Steve O'Hater</a></span></p><a
                                             class="post-block__title__link"
@@ -144,14 +197,18 @@
                                     <div class="mini-view">
                                         <article class="mini-view__item mini-item--unread">
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">jQuery teams up with Jay-Z to create the hit single $onclick</a>
+                                                    href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">jQuery
+                                                    teams up with Jay-Z to create the hit single $onclick</a>
                                             </h3>
                                             <p class="fi-main-block__byline"><span><a aria-label="Posts by Brian Heater"
-                                                        href="/author/brian-heater/">My Little Pony</a></span></p>
+                                                        href="/author/brian-heater/">Beyon-Z Knowles</a></span></p>
                                         </article>
                                         <article class="mini-view__item mini-item--unread">
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/21/uber-eats-pass-subscription/">Machines stop learning, can't get a job, end up homeless</a></h3>
+                                                    href="/2019/05/21/uber-eats-pass-subscription/">Machines stop
+
+                                                    learning, can't get a job, end up homeless</a></h3>
+
                                             <p class="fi-main-block__byline"><span><a
                                                         aria-label="Posts by Josh Constine"
                                                         href="/author/josh-constine/">Count Constantine</a></span></p>
@@ -171,30 +228,38 @@
                                                     Extra Crunch</div>
                                             </div>
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/21/the-exit-getarounds-300m-roadtrip/">Python bites developer</a></h3>
+                                                    href="/2019/05/21/the-exit-getarounds-300m-roadtrip/">Python bites
+                                                    developer</a></h3>
                                             <p class="fi-main-block__byline"><span><a aria-label="Posts by Lucas Matney"
                                                         href="/author/lucas-matney/">Richard Baconsizer</a></span></p>
                                         </article>
                                         <article class="mini-view__item mini-item--unread">
-                                            <h3 class="mini-view__item__title"><a href="/2019/05/21/deligram/">Kim Kardashian releases new tech focused brand "Back-End Development"</a></h3>
+                                            <h3 class="mini-view__item__title"><a href="/2019/05/21/deligram/">Kim
+                                                    Kardashian releases new tech focused brand "Back-End
+                                                    Development"</a></h3>
+
                                             <p class="fi-main-block__byline"><span><a aria-label="Posts by Jon Russell"
                                                         href="/author/jon-russell/">Caitlyn Jenner</a></span></p>
                                         </article>
                                     </div>
                                 </div>
-                                <aside class="sidebar sidebar--feature-island sidebar--sticky-main sticky-parent " style="border-style:solid; border-color: pink; border-width:3px;">
+                                <aside class="sidebar sidebar--feature-island sidebar--sticky-main sticky-parent "
+                                    style="border-style:solid; border-color: pink; border-width:3px;">
                                     <div class="sticky-top-wrap">
-                                        <div class="ad-unit sticky"> <!-- was called: "ad-unit sticky" -->
+                                        <div class="api-unit sticky">
+                                            <!-- was called: "ad-unit sticky" -->
                                             <div class="sidebar-widget sidebar-widget--event">
-                                                <div class="DO-weather">Weather
+                                                <div id="DO-weather">
+                                                </div>
+                                                <div class="DO-Gmap" style="font-weight: bold">10 Up and Coming Tech
+                                                    Hubs
+                                                    <!-- Here is Sabrina's google maps api -->
+
+                                                    <div id="map" style="height: 200px; width:100%;">
+                                                    </div>
 
                                                 </div>
-                                                <div class="DO-Gmap">Gmap
 
-                                                </div>
-                                                <div class="DO-Reddit">Reddit
-                                                    
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -202,7 +267,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-wrap" style="border-style:solid; border-color: green; border-width:3px;"> <!-- Main/Other Content Wrapper -->
+                    <div class="content-wrap" style="border-style:solid; border-color: green; border-width:3px;">
+                        <!-- Main/Other Content Wrapper -->
                         <div class="content">
                             <h2 class="river__title river__title--home">The Latest</h2>
                             <div class="river river--homepage ">
@@ -217,17 +283,20 @@
                                         </footer>
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/review-of-elon-musks-dc-to-baltimore-loop-system-reveals-safety-concerns/">Mark Wahlberg partners with Tech Ladies, learns to type...(sort of)</a></h2>
+                                                    href="/2019/05/22/review-of-elon-musks-dc-to-baltimore-loop-system-reveals-safety-concerns/">Mark
+                                                    Wahlberg partners with Tech Ladies, learns to type...(sort of)</a>
+                                            </h2>
                                             <div class="post-block__content">
-                                                <p>The Boring Company’s Loop transit system that aims to shuttle people
-                                                    in autonomous electric vehic...</p>
+                                                <p>“It’s great to have such a strong male figure representing
+                                                    femininity!” said a spokeswoman for Tech…</p>
                                             </div>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T19:27:54.000Z">2 mins ago</time><span
                                                         class="river-byline__authors"><span><a
                                                                 aria-label="Posts by Mark Harris"
-                                                                href="/author/mark-harris/">Tommy Corn</a></span></span></div>
+                                                                href="/author/mark-harris/">Tommy Corn</a></span></span>
+                                                </div>
                                             </div>
                                         </header>
                                     </article>
@@ -240,7 +309,8 @@
                                                         datetime="2019-05-22T18:50:37.000Z">39 mins ago</time><span
                                                         class="river-byline__authors"><span><a
                                                                 aria-label="Posts by Josh Constine"
-                                                                href="/author/josh-constine/">Quentin Tarantula</a></span></span></div>
+                                                                href="/author/josh-constine/">Quentin
+                                                                Tarantula</a></span></span></div>
                                             </div>
                                         </header>
                                         <div class="post-block__content">
@@ -264,7 +334,8 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/amazon-has-turned-warehouse-tasks-into-a-literal-game/">JS gets a C++ on quiz</a></h2>
+                                                    href="/2019/05/22/amazon-has-turned-warehouse-tasks-into-a-literal-game/">JS
+                                                    gets a C++ on quiz</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T18:12:19.000Z">1 hour ago</time><span
@@ -275,9 +346,9 @@
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>Working at an Amazon fulfillment center is tough and tedious. Stories of
-                                                problematic working conditions have plagued the company for years now,
-                                                and pressure has likely only increased as the retail ...</p>
+                                            <p>JavaScript took a step back today when trying to become a compiled
+                                                language, and only got a C++. It had most of it’s trouble trying to
+                                                efficiently access hardware…</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
@@ -292,7 +363,8 @@
                                             </figure>
                                         </footer>
                                     </article>
-                                    <div class="yap-ad-container-div" style="border-style:solid; border-color: pink; border-width:3px;">
+                                    <div class="yap-ad-container-div"
+                                        style="border-style:solid; border-color: pink; border-width:3px;">
                                         <div class="yap-ad-b2018d9e-dedc-4e85-8823-b06917beb892"></div>
                                     </div>
                                     <div class="ad-unit__ad ad-unit__native" id="tc-ad-native"><iframe itemscope=""
@@ -318,7 +390,8 @@
                                                     Extra Crunch</div>
                                             </div>
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/moira-weigel-on-the-internet-of-women-part-two/">Node develops nodules, goes to a specialist</a></h2>
+                                                    href="/2019/05/22/moira-weigel-on-the-internet-of-women-part-two/">Node
+                                                    develops nodules, goes to a specialist</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T18:07:50.000Z">1 hour ago</time><span
@@ -329,9 +402,9 @@
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>Tech ethics can mean a lot of different things, but surely one of the
-                                                most critical, unavoidable, and yet somehow still controversial
-                                                propositions in the emerging field of ethics in technology is t...</p>
+                                            <p>Node.js has been avoiding it’s front-end for years, but can no longer do
+                                                so. While running on V8 (juice), node has found nodules in its modules
+                                                and was rushed to a specialist…</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
@@ -349,20 +422,23 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/seven-years-later-the-ouya-is-dead-for-real/">jQuery arrested for appendingChild to a body</a></h2>
+                                                    href="/2019/05/22/seven-years-later-the-ouya-is-dead-for-real/">jQuery
+                                                    arrested for appendingChild to a body</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T18:02:16.000Z">1 hour ago</time><span
                                                         class="river-byline__authors"><span><a
                                                                 aria-label="Posts by Greg Kumparak"
                                                                 href="/author/greg-kumparak/">Greg
-                                                                Kumparak</a></span></span></div>
+                                                                Kumsquick</a></span></span></div>
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>Remember the OUYA? As a cheap Android-powered game console, it was
-                                                pitched as being able to “open the last closed platform: the TV”. It was
-                                                one of the first huge Kickstarter campaigns, ...</p>
+                                            <p>jQuery was caught in a compromising position today when caught with an
+                                                underage
+
+                                                &lt;body&gt;. It was in the middle of appendingChild to another
+                                                parent tag…</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
@@ -380,7 +456,10 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/subscription-fatigue-hasnt-hit-yet/">Coding bootcamps partner with military for more authentic experience</a></h2>
+                                                    href="/2019/05/22/subscription-fatigue-hasnt-hit-yet/">Coding
+                                                    bootcamps partner with military for more authentic experience</a>
+                                            </h2>
+
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T17:29:07.000Z">2 hours ago</time><span
@@ -408,7 +487,8 @@
                                             </figure>
                                         </footer>
                                     </article>
-                                    <div class="yap-ad-container-div" style="border-style:solid; border-color: pink; border-width:3px;">
+                                    <div class="yap-ad-container-div"
+                                        style="border-style:solid; border-color: pink; border-width:3px;">
                                         <div class="yap-ad-05c0b21d-e742-494d-ac59-474e3feaa4b8"></div>
                                     </div>
                                     <article class="post-block post-block--image post-block--unread">
@@ -457,7 +537,8 @@
                                             </figure>
                                         </footer>
                                     </article><a href="/events/disrupt-sf-2019/tickets">
-                                        <div class="homepage__event-promo" style="border-style:solid; border-color: orange; border-width:3px;">
+                                        <div class="homepage__event-promo"
+                                            style="border-style:solid; border-color: orange; border-width:3px;">
                                             <div class="event-promo__header">
                                                 <div class="logo"><svg width="60px" height="30px" viewBox="0 0 60 30"
                                                         version="1.1" style="display: block;">
@@ -470,7 +551,8 @@
                                                     </svg></div>
                                                 <div class="event-info">
                                                     <h2 class="event-title">Disrupt SF 2019</h2><span
-                                                        class="event-date">Oct 2 - 4</span>
+                                                        class="event-date">Oct
+                                                        2 - 4</span>
                                                 </div>
                                             </div>
                                             <div class="event-promo__content">
@@ -523,7 +605,8 @@
                                         </footer>
                                     </article>
                                     <div class="post-block">
-                                        <div class="newsletter-signup-block" style="border-style:solid; border-color: red; border-width:3px;">
+                                        <div class="newsletter-signup-block"
+                                            style="border-style:solid; border-color: red; border-width:3px;">
                                             <header class="newsletter-signup__header">
                                                 <h3 class="newsletter-signup__title">Sign up for Newsletters</h3>
                                                 <p class="newsletter-signup__all-link"><a
@@ -564,9 +647,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ad-unit__ad ad-unit__native" id="tc-ad-native2" style="border-style:solid; border-color: pink; border-width:3px;"><iframe itemscope=""
-                                            itemtype="https://schema.org/WPAdBlock" tabindex="-1" width="859"
-                                            height="250" title="Ad" marginwidth="0" marginheight="0"
+                                    <div class="ad-unit__ad ad-unit__native" id="tc-ad-native2"
+                                        style="border-style:solid; border-color: pink; border-width:3px;"><iframe
+                                            itemscope="" itemtype="https://schema.org/WPAdBlock" tabindex="-1"
+                                            width="859" height="250" title="Ad" marginwidth="0" marginheight="0"
                                             allowtransparency="true" frameborder="0" scrolling="no"
                                             sandbox="allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
                                             id="atwAdFrame3" name="atwAdFrame3" banid=""
@@ -604,7 +688,8 @@
                                             </figure>
                                         </footer>
                                     </article>
-                                    <div class="upcoming-events" style="border-style:solid; border-color: orange; border-width:3px;">
+                                    <div class="upcoming-events"
+                                        style="border-style:solid; border-color: orange; border-width:3px;">
                                         <h3 class="upcoming-events__heading">Where we’ll be next</h3>
                                         <div class="upcoming-events__list">
                                             <div class="slick-initialized slick-slider">
@@ -808,9 +893,12 @@
                                             </figure>
                                         </footer>
                                     </article>
-                                    <div class="DO-garrett recent-funding" style="border-style:solid; border-color: grey; border-width:3px;"> <!-- This could be replaced with our crunchbase API implementation -->
+                                    <div class="DO-garrett recent-funding"
+                                        style="border-style:solid; border-color: grey; border-width:3px;">
+                                        <!-- This could be replaced with our crunchbase API implementation -->
                                         <header class="recent-funding__header">
                                             <h3 class="recent-funding__heading">Almost Recent Funding Reports</h3>
+
                                             <div class="recent-funding__tout">by <div class="crunchbase-logo"><a
                                                         href="https://www.crunchbase.com/" target="_blank"><svg
                                                             width="80px" height="12.96092281770462px"
@@ -849,834 +937,345 @@
                                                         </svg><span class="screen-reader-text">(opens in a new
                                                             window)</span></a></div>
                                             </div>
+
                                         </header>
-                                        <div class="recent-funding__list">
-                                            <div class="slick-initialized slick-slider"><svg
-                                                    class="icon icon--arrow-left icon--black slick-arrow slick-prev slick-disabled"
-                                                    viewBox="0 0 20 20" version="1.1" aria-labelledby="title">
-                                                    <title>arrow-left</title>
-                                                    <path
-                                                        d="M20,11.4H0l0-2.9h20V11.4z M5.7,8.6H2.9V5.7h2.9V8.6z M5.7,14.3H2.9v-2.9h2.9V14.3z M8.6,17.1H5.7v-2.9h2.9V17.1z M11.4,20H8.6v-2.9h2.9V20z M11.4,2.9H8.6V0l2.9,0V2.9z M8.6,5.7H5.7V2.9h2.9V5.7z">
-                                                    </path>
-                                                </svg>
-                                                <div class="slick-list">
-                                                    <div class="slick-track"
-                                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 8845.47px;">
-                                                        <div data-index="0" class="slick-slide slick-active"
-                                                            tabindex="-1" style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/wealthsimple?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Wealthsimple<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Toronto, Ontario</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">100M
-                                                                            CAD</span></span><span
-                                                                        class="recent-funding__profile__series">Round</span>
-                                                                </div>
-                                                            </div>
+                                        <div class="slick-list">
+                                            <div class="slick-track"
+                                                style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 8845.47px;">
+                                                <!-- *** Beginning of the information boxes *** -->
+                                                <!-- Microsoft Corporation -->
+                                                <div data-index="0" class="slick-slide slick-active" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/wealthsimple?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">Microsoft<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Albuquerque, NM</p>
                                                         </div>
-                                                        <div data-index="1" class="slick-slide slick-active"
-                                                            tabindex="-1" style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/dah-makan?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">dahmakan<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Kuala Lumpur, Kuala Lumpur</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$5.0M</span></span><span
-                                                                        class="recent-funding__profile__series">a</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="2" class="slick-slide slick-active"
-                                                            tabindex="-1" style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/niki-ai?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">niki.ai<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Bangalore, Karnataka</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">116M
-                                                                            INR</span></span><span
-                                                                        class="recent-funding__profile__series">Debt
-                                                                        Financing</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="3" class="slick-slide slick-active"
-                                                            tabindex="-1" style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/restaurantkaart?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">RestaurantKaart<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Amsterdam, Noord-Holland</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">750K
-                                                                            EUR</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="4" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/vequrity?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">RangeForce<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">New
-                                                                        York, New York</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$1.5M</span></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="5" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/calm-radio?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Calm Radio<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Toronto, Ontario</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$1.2M</span></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="6" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/yumamia?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Yumamia<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Cairo, Al Qahirah</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$1.5M</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="7" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/skywatch-technologies?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">VOOM Insurance<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Palo Alto, California</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$5.0M</span></span><span
-                                                                        class="recent-funding__profile__series">a</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="8" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/ivalue-infosolutions?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">iValue InfoSolutions<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Bangalore, Karnataka</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$18M</span></span><span
-                                                                        class="recent-funding__profile__series">Private
-                                                                        Equity</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="9" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/adma-biologics?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">ADMA Biologics<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Ramsey, New Jersey</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$52M</span></span><span
-                                                                        class="recent-funding__profile__series">Post IPO
-                                                                        Equity</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="10" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/aerin-medical?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Aerin Medical<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Santa Clara, California</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$50M</span></span><span
-                                                                        class="recent-funding__profile__series">Debt
-                                                                        Financing</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="11" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/koosmik?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Koosmik<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Luxembourg, Luxembourg</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$2.0M</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="12" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/shift-c02b?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">shift<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        London, England</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">2.5M
-                                                                            GBP</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="13" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/gokada?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Gokada<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">New
-                                                                        York, New York</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$5.3M</span></span><span
-                                                                        class="recent-funding__profile__series">a</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="14" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/specifix?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Specifix<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Highland Park, Illinois</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$150K</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="15" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/vectorly?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Vectorly<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">New
-                                                                        York, New York</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$500K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="16" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/concentric-analgesics?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Concentric Analgesics<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">San
-                                                                        Francisco, California</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$76M</span></span><span
-                                                                        class="recent-funding__profile__series">b</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="17" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/hotspoter?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Hotspoter<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">5K
-                                                                            EUR</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="18" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/huarong-international-financial-holdings?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Huarong International
-                                                                            Financial Holdings<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Beijing, Beijing</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">600M
-                                                                            HKD</span></span><span
-                                                                        class="recent-funding__profile__series">Post IPO
-                                                                        Debt</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="19" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/my-lil-healthbot?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">My Lil' HealthBot<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">Los
-                                                                        Angeles, California</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$300K</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="20" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/spreadshout-1dba?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">SpreadShout<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Mexico City, Distrito Federal</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$60K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="21" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/spreadshout-f3df?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">SpreadShout<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Mexico City, Distrito Federal</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$60K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="22" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/spreadshout-cc30?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">SpreadShout<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Mexico City, Distrito Federal</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$60K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="23" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/spreadshout-2251?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">SpreadShout<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Mexico City, Distrito Federal</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$60K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="24" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/spreadshout-94b5?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">SpreadShout<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Mexico City, Distrito Federal</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$60K</span></span><span
-                                                                        class="recent-funding__profile__series">pre
-                                                                        seed</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="25" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/coinmode?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">CoinMode<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Guildford, Surrey</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">539K
-                                                                            GBP</span></span><span
-                                                                        class="recent-funding__profile__series">Equity
-                                                                        Crowdfunding</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="26" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/coinmode?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">CoinMode<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Guildford, Surrey</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">539K
-                                                                            GBP</span></span><span
-                                                                        class="recent-funding__profile__series">Equity
-                                                                        Crowdfunding</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="27" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/international-cement-group?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">INTERNATIONAL Cement
-                                                                            Group<span class="screen-reader-text">(opens
-                                                                                in a new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Singapore, Central Region</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">3.6M
-                                                                            SGD</span></span><span
-                                                                        class="recent-funding__profile__series">Post IPO
-                                                                        Equity</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="28" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/china-star-food-group?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">China Star Food Group<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Singapore, Central Region</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">4.3M
-                                                                            SGD</span></span><span
-                                                                        class="recent-funding__profile__series">Post IPO
-                                                                        Equity</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="29" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/curiious?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Curiious<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Sydney, New South Wales</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$2.0M</span></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="30" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/nenda?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Nenda<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Stockholm, Stockholms Lan</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">5.5M
-                                                                            SEK</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="31" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/no-antibiotics?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">No-Antibiotics<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Chengyang, Shandong</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">20M
-                                                                            CNY</span></span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="32" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/veego?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Veego<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                    <p class="recent-funding__profile__headquarters">
-                                                                        Ramat Gan, Tel Aviv</p>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$5.0M</span></span><span
-                                                                        class="recent-funding__profile__series">Seed</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-index="33" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 212.632px;">
-                                                            <div class="recent-funding__profile">
-                                                                <div class="recent-funding__profile__heading">
-                                                                    <h3 class="recent-funding__profile__title"><a
-                                                                            class="recent-funding__profile__title__link"
-                                                                            href="https://www.crunchbase.com/organization/locana?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
-                                                                            target="_blank">Locana<span
-                                                                                class="screen-reader-text">(opens in a
-                                                                                new window)</span></a></h3>
-                                                                </div>
-                                                                <div class="recent-funding__profile__details"><span
-                                                                        class="recent-funding__profile__raised"><span
-                                                                            class="gradient-text gradient-text--green-reverse-gradient">$55M</span></span><span
-                                                                        class="recent-funding__profile__series">a</span>
-                                                                </div>
-                                                            </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="MSFT"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">We used to be
+                                                                cool in the 90's </span>
                                                         </div>
                                                     </div>
-                                                </div><svg
-                                                    class="icon icon--arrow-right icon--black slick-arrow slick-next"
-                                                    viewBox="0 0 20 20" version="1.1" aria-labelledby="title">
-                                                    <title>arrow-right</title>
-                                                    <path
-                                                        d="M0,8.6h20v2.9H0V8.6z M14.3,11.4h2.9v2.9h-2.9V11.4z M14.3,5.7h2.9v2.9h-2.9V5.7z M11.4,2.9h2.9v2.9h-2.9V2.9z M8.6,0h2.9v2.9H8.6V0z M8.6,17.1h2.9V20H8.6V17.1z M11.4,14.3h2.9v2.9h-2.9V14.3z">
-                                                    </path>
-                                                </svg>
+                                                </div>
+                                                <!-- Apple -->
+                                                <div data-index="1" class="slick-slide slick-active" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/dah-makan?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">Apple<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Cupertino, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="AAPL"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">however horrible
+                                                                the product, the pre-orders will sell out</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Google -->
+                                                <div data-index="2" class="slick-slide slick-active" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/niki-ai?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">Google<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Mountain View, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="GOOGL"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient">
+                                                                </span></span></span><span
+                                                                class="recent-funding__profile__series">You wish you
+                                                                could work here</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- FaceBook -->
+                                                <div data-index="3" class="slick-slide slick-active" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/restaurantkaart?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">FaceBook<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Menlo Park, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="FB"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">Your privacy
+                                                                isn't our responisbility</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Tesla -->
+                                                <div data-index="4" class="slick-slide" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/vequrity?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">Tesla</a><span
+                                                                    class="screen-reader-text">(opens in a
+                                                                    new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Palo Alto, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="TSLA"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">We have a
+                                                                vehicle in space.. What do you have?</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Amazon -->
+                                                <div data-index="5" class="slick-slide" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/calm-radio?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">Amazon<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Seattle, WA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="AMZN"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">underpaying our
+                                                                workers gets you cheap stuff</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- HP -->
+                                                <div data-index="6" class="slick-slide" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/yumamia?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">HP Inc<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                Palo Alto, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span id="HPQ"
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span></span><span
+                                                                class="recent-funding__profile__series">Your grandad's
+                                                                computer company</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- GoPro -->
+                                                <div data-index="7" class="slick-slide" tabindex="-1"
+                                                    style="outline: none; width: 212.632px;">
+                                                    <div class="recent-funding__profile">
+                                                        <div class="recent-funding__profile__heading">
+                                                            <h3 class="recent-funding__profile__title"><a
+                                                                    class="recent-funding__profile__title__link"
+                                                                    href="https://www.crunchbase.com/organization/skywatch-technologies?utm_source=crunchbase&amp;utm_medium=export&amp;utm_campaign=crunchbase_tc_river"
+                                                                    target="_blank">GoPro<span
+                                                                        class="screen-reader-text">(opens in a
+                                                                        new window)</span></a></h3>
+                                                            <p class="recent-funding__profile__headquarters">
+                                                                San Mateo, CA</p>
+                                                        </div>
+                                                        <div class="recent-funding__profile__details"><span
+                                                                class="recent-funding__profile__raised"><span
+                                                                    class="gradient-text gradient-text--green-reverse-gradient"></span></span><span
+                                                                class="recent-funding__profile__series">Turning
+                                                                meaningless tasks into video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <article class="post-block post-block--image post-block--unread">
-                                        <header class="post-block__header">
-                                            <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">Invites
-                                                    are out for Apple’s June 3 WWDC keynote — there will be unicorns</a>
-                                            </h2>
-                                            <div class="post-block__meta">
-                                                <div class="river-byline"><time class="river-byline__time"
-                                                        datetime="2019-05-22T16:22:09.000Z">3 hours ago</time><span
-                                                        class="river-byline__authors"><span><a
-                                                                aria-label="Posts by Brian Heater"
-                                                                href="/author/brian-heater/">Brian
-                                                                Heater</a></span></span></div>
-                                            </div>
-                                        </header>
-                                        <div class="post-block__content">
-                                            <p>Apple’s WWDC keynote invites just went out, with only a couple of weeks
-                                                to spare. The company’s graphic designers appear to be having some fun
-                                                this time out, with a mind-blown rainbow unicorn, losi...</p>
-                                        </div>
-                                        <footer class="post-block__footer">
-                                            <figure class="post-block__media">
-                                                <picture>
-                                                    <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png">
-                                                    <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1 430w">
-                                                </picture>
-                                            </figure>
-                                        </footer>
-                                    </article>
-                                    <article class="post-block post-block--image post-block--unread">
-                                        <header class="post-block__header">
-                                            <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/reserve-your-demo-table-for-tc-sessions-mobility-2019/">Reserve
-                                                    your demo table for TC Sessions: Mobility 2019</a></h2>
-                                            <div class="post-block__meta">
-                                                <div class="river-byline"><time class="river-byline__time"
-                                                        datetime="2019-05-22T16:00:32.000Z">3 hours ago</time><span
-                                                        class="river-byline__authors"><span><a
-                                                                aria-label="Posts by Emma Comeau"
-                                                                href="/author/emma-comeau/">Emma
-                                                                Comeau</a></span></span></div>
-                                            </div>
-                                        </header>
-                                        <div class="post-block__content">
-                                            <p>Early-stage startup ingenuity is one of the driving forces shaping the
-                                                rapid, radical changes taking place in mobility and transportation. Come
-                                                July 10, TechCrunch will host more than 1,000 movers,...</p>
-                                        </div>
-                                        <footer class="post-block__footer">
-                                            <figure class="post-block__media">
-                                                <picture>
-                                                    <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png">
-                                                    <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1 430w">
-                                                </picture>
-                                            </figure>
-                                        </footer>
-                                    </article>
-                                </div><button class="load-more "><span
-                                        class="gradient-text gradient-text--green-gradient">Load More</span></button>
-                            </div>
-                        </div>
-                        <aside class="sidebar sidebar--main sidebar--sticky-main sticky-parent ">
-                            <div class="sticky-bottom-wrap">
-                                <div class="ad-unit sticky">
-                                    <div class="ad-unit__ad ad-unit__rightrail" id="tc-ad-rightrail"><iframe
-                                            itemscope="" itemtype="https://schema.org/WPAdBlock" tabindex="-1"
-                                            width="300" height="250" title="Ad" marginwidth="0" marginheight="0"
-                                            allowtransparency="true" frameborder="0" scrolling="no"
-                                            sandbox="allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
-                                            id="atwAdFrame1" name="atwAdFrame1" banid="5668851|21"
-                                            class="uac_300x250"></iframe>
-                                        <div id="atwAdFrame1EAN"
-                                            style="width: 300px; height: 15px; top: 0px; left: 0px; margin: 0px auto; position: relative;">
-                                            <a id="atwAdFrame1EANA"
-                                                style="position:absolute;right:0px;z-index:4999;margin:0 auto;width:77px;height:15px"
-                                                href="http://adinfo.aol.com/" target="_blank"><img
-                                                    src="//o.aolcdn.com/ads/adchoices.png"
-                                                    style="border:none;width:77px;height:15px;vertical-align:top"
-                                                    alt="AdChoices"></a></div>
                                     </div>
                                 </div>
+                                <article class="post-block post-block--image post-block--unread">
+                                    <header class="post-block__header">
+                                        <h2 class="post-block__title"><a class="post-block__title__link"
+                                                href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">Invites
+                                                are out for Apple’s June 3 WWDC keynote — there will be unicorns</a>
+                                        </h2>
+                                        <div class="post-block__meta">
+                                            <div class="river-byline"><time class="river-byline__time"
+                                                    datetime="2019-05-22T16:22:09.000Z">3 hours ago</time><span
+                                                    class="river-byline__authors"><span><a
+                                                            aria-label="Posts by Brian Heater"
+                                                            href="/author/brian-heater/">Brian
+                                                            Heater</a></span></span></div>
+                                        </div>
+                                    </header>
+                                    <div class="post-block__content">
+                                        <p>Apple’s WWDC keynote invites just went out, with only a couple of weeks
+                                            to spare. The company’s graphic designers appear to be having some fun
+                                            this time out, with a mind-blown rainbow unicorn, losi...</p>
+                                    </div>
+                                    <footer class="post-block__footer">
+                                        <figure class="post-block__media">
+                                            <picture>
+                                                <source
+                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=400&amp;h=400&amp;crop=1 2x"
+                                                    media="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png">
+                                                <img alt="" sizes="(max-width: 430px) 100vw, 430px"
+                                                    src="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1"
+                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1 430w">
+                                            </picture>
+                                        </figure>
+                                    </footer>
+                                </article>
+                                <article class="post-block post-block--image post-block--unread">
+                                    <header class="post-block__header">
+                                        <h2 class="post-block__title"><a class="post-block__title__link"
+                                                href="/2019/05/22/reserve-your-demo-table-for-tc-sessions-mobility-2019/">Reserve
+                                                your demo table for TC Sessions: Mobility 2019</a></h2>
+                                        <div class="post-block__meta">
+                                            <div class="river-byline"><time class="river-byline__time"
+                                                    datetime="2019-05-22T16:00:32.000Z">3 hours ago</time><span
+                                                    class="river-byline__authors"><span><a
+                                                            aria-label="Posts by Emma Comeau"
+                                                            href="/author/emma-comeau/">Emma
+                                                            Comeau</a></span></span></div>
+                                        </div>
+                                    </header>
+                                    <div class="post-block__content">
+                                        <p>Early-stage startup ingenuity is one of the driving forces shaping the
+                                            rapid, radical changes taking place in mobility and transportation. Come
+                                            July 10, TechCrunch will host more than 1,000 movers,...</p>
+                                    </div>
+                                    <footer class="post-block__footer">
+                                        <figure class="post-block__media">
+                                            <picture>
+                                                <source
+                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=400&amp;h=400&amp;crop=1 2x"
+                                                    media="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png">
+                                                <img alt="" sizes="(max-width: 430px) 100vw, 430px"
+                                                    src="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1"
+                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1 430w">
+                                            </picture>
+                                        </figure>
+                                    </footer>
+                                </article>
+                            </div><button class="load-more "><span
+                                    class="gradient-text gradient-text--green-gradient">Load More</span></button>
+                        </div>
+                    </div>
+                    <aside class="sidebar sidebar--main sidebar--sticky-main sticky-parent ">
+                        <div class="sticky-bottom-wrap">
+                            <div class="ad-unit sticky">
+                                <div class="ad-unit__ad ad-unit__rightrail" id="tc-ad-rightrail"><iframe itemscope=""
+                                        itemtype="https://schema.org/WPAdBlock" tabindex="-1" width="300" height="250"
+                                        title="Ad" marginwidth="0" marginheight="0" allowtransparency="true"
+                                        frameborder="0" scrolling="no"
+                                        sandbox="allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
+                                        id="atwAdFrame1" name="atwAdFrame1" banid="5668851|21"
+                                        class="uac_300x250"></iframe>
+                                    <div id="atwAdFrame1EAN"
+                                        style="width: 300px; height: 15px; top: 0px; left: 0px; margin: 0px auto; position: relative;">
+                                        <a id="atwAdFrame1EANA"
+                                            style="position:absolute;right:0px;z-index:4999;margin:0 auto;width:77px;height:15px"
+                                            href="http://adinfo.aol.com/" target="_blank"><img
+                                                src="//o.aolcdn.com/ads/adchoices.png"
+                                                style="border:none;width:77px;height:15px;vertical-align:top"
+                                                alt="AdChoices"></a></div>
+                                </div>
                             </div>
-                        </aside>
-                    </div>
+                        </div>
+                    </aside>
                 </div>
-                <footer class="site-footer">
-                    <div class="wrap">
-                        <ul class="menu site-footer__menu">
-                            <li class="menu__item "><a href="/">TechCrunch</a></li>
-                            <li class="menu__item "><a
-                                    href="https://policies.oath.com/xw/en/oath/privacy/intl/index.html">Privacy
-                                    Policy</a></li>
-                            <li class="menu__item "><a href="http://adinfo.aol.com/about-our-ads/">About Our Ads</a>
-                            </li>
-                            <li class="menu__item "><a href="/pages/code-of-conduct/">Code of Conduct</a></li>
-                            <li class="menu__item "><a
-                                    href="https://policies.oath.com/xw/en/oath/terms/otos/index.html">Terms of
-                                    Service</a></li>
-                        </ul>
-                        <p><span>© 2013-2019 Verizon Media. All rights reserved. </span><span>Powered by <a
-                                    target="_blank"
-                                    href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit">WordPress
-                                    VIP<span class="screen-reader-text">(opens in a new window)</span></a>. Fonts by <a
-                                    target="_blank" href="https://typekit.com/">TypeKit<span
-                                        class="screen-reader-text">(opens in a new window)</span></a>.</span></p>
-                    </div>
-                </footer>
             </div>
+            <footer class="site-footer">
+                <div class="wrap">
+                    <ul class="menu site-footer__menu">
+                        <li class="menu__item "><a href="/">TechCrunch</a></li>
+                        <li class="menu__item "><a
+                                href="https://policies.oath.com/xw/en/oath/privacy/intl/index.html">Privacy
+                                Policy</a></li>
+                        <li class="menu__item "><a href="http://adinfo.aol.com/about-our-ads/">About Our Ads</a>
+                        </li>
+                        <li class="menu__item "><a href="/pages/code-of-conduct/">Code of Conduct</a></li>
+                        <li class="menu__item "><a
+                                href="https://policies.oath.com/xw/en/oath/terms/otos/index.html">Terms of
+                                Service</a></li>
+                    </ul>
+                    <p><span>© 2013-2019 Verizon Media. All rights reserved. </span><span>Powered by <a target="_blank"
+                                href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit">WordPress
+                                VIP<span class="screen-reader-text">(opens in a new window)</span></a>. Fonts by <a
+                                target="_blank" href="https://typekit.com/">TypeKit<span
+                                    class="screen-reader-text">(opens in a new window)</span></a>.</span></p>
+                </div>
+            </footer>
         </div>
     </div>
+    </div>
+    <!-- include JQuery 3.4.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- include Weather API and icons scripts -->
+    <script type='text/javascript' src='js/skycons.js'></script>
+    <script type='text/javascript' src='js/coding-forecast.js'></script>
+    <!-- include Comcastify scripts and load it on document ready -->
+    <script type='text/javascript' src='js/comcastify.js'></script>
+    <!-- remove AdChoices overlay -->
+    <script type='text/javascript' src='js/remove-adchoices.js'></script>
 
+    <script>
+        window.onload = comcastifyjs.fixMyImagesLoadingSoFast({
+            boxColor: 'gray',
+            // Define what percentage of images visibly load
+            loadMaxPercent: 0.75,
+            // Define how fast the images load (higher number is slower)
+            loadSpeed: 1000,
+            loadIncrement: 5
+        });
+        // console.log(comcastifyToggleJS);
+        // All variable availabe are listed below
+        // elements: args.elements || document.querySelectorAll('img:not([class="progressiveJPEGemulator"])'),
+        //   boxColor: args.boxColor || '#000000',                             // color of box overlay
+        //   loadMaxPercent: args.loadMaxPercent || 0.0,                       // max percentage to load images
+        //   loadSpeed: args.loadSpeed || 500,                                 // how often in ms to pass
+        //   randLoadIncrement: args.randLoadIncrement || false,               // true to randomize load increment
+        //   loadIncrement: args.loadIncrement || 1,                           // pixels to load per pass
+        //   randomPause: args.randomPause || 0.0,                             // probability of skipping a pass
+        //   progressiveJPEG: args.progressiveJPEG || false        // enable progressive JPEG emulation        
+    </script>
+    <script src="js/sabrina.js"></script>
+    <script src="js/dev.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTLHA4kWqkubsSo6VGTsiWl_lhhs9TNAQ&callback=initMap"
+        async defer></script>
 </body>
 
 </html>
