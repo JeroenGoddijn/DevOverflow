@@ -13324,7 +13324,12 @@ fieldset {
     flex-direction: column;
     min-width: 212px;
     min-height: 350px;
+<<<<<<< HEAD:inspiration/techcrunch.css
+    margin-right: 2em
+    
+=======
     margin-right: 4em
+>>>>>>> ca08b201487a857eda266a87d8535a4b7f8a5f14:styles/main.css
 }
 
 .upcoming-events__item__body {
