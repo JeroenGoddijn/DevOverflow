@@ -2296,6 +2296,11 @@ body div#actionbar {
     transform: translate(0)
 }
 
+.ad-unit__leaderboard{
+    background-image: url("images/homebrewad.jpg");
+    width: 970px;
+    height: 250px;    
+}
 @media screen and (min-width: 1100px) {
     .ad-unit__billboard,.ad-unit__super {
         border:0;
@@ -4097,34 +4102,6 @@ a.active .crunchbase-tooltip-indicator,a:hover .crunchbase-tooltip-indicator {
     to {
         fill: transparent
     }
-}
-
-.extra-crunch-logo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.extra-crunch-logo--stacked {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.extra-crunch-logo .extra-crunch-lettermark {
-    font-family: aktiv-grotesk,sans-serif;
-    font-weight: 600
-}
-
-.extra-crunch-logo .extra-crunch-lettermark__text {
-    display: inline;
-    border-bottom-style: solid;
-    border-bottom-color: #fed952;
-    border-image-source: linear-gradient(90deg,#dca946 0,#fed952);
-    border-image-slice: 1
 }
 
 .menu {
@@ -12958,7 +12935,8 @@ fieldset {
     color: #777;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    text-transform: capitalize
+    text-transform: capitalize;
+    word-break: normal;
 }
 
 @media (min-width: 1440px) {
@@ -13344,9 +13322,14 @@ fieldset {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-width: 212px;
     min-height: 350px;
+<<<<<<< HEAD:inspiration/techcrunch.css
     margin-right: 2em
     
+=======
+    margin-right: 4em
+>>>>>>> ca08b201487a857eda266a87d8535a4b7f8a5f14:styles/main.css
 }
 
 .upcoming-events__item__body {
@@ -13400,7 +13383,7 @@ fieldset {
 .upcoming-events__item__footer:before {
     content: " ";
     display: block;
-    border: 2px solid #00a562;
+    border: 2px solid #d38900;
     width: 60px;
     height: 2px;
     margin-bottom: 20px
