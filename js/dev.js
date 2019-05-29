@@ -12,17 +12,17 @@ $(function () {
         for (i = 0; i < companies.length; i++) {
             let currentTicker = companies[i];
             let mkUrl = url1 + currentTicker + url2 + key;
-            console.log(mkUrl);
+            // console.log(mkUrl);
             url.push(mkUrl)
 
             $.get(url[i])
                 .done((response) => {
-                    console.log(response)
-                    let display = response["Time Series (5min)"]["2019-05-28 13:00:00"]["4. close"];
-                    console.log(display);
+                    // console.log(response)
+                    let display = response["Time Series (5min)"]["2019-05-28 16:00:00"]["4. close"];
+                    // console.log(display);
                     // $("#api").append(response);
                     // console.log(new Date());
-                    console.log('#' + currentTicker);
+                    // console.log('#' + currentTicker);
                     $('#' + currentTicker).html(display);
                 })
             // return 

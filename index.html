@@ -8,12 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DevOverflow</title>
 
-    <link rel='stylesheet' id='all-css-0' href='styles/techcrunch.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='all-css-0' href='styles/main.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' id='animated-weather-icons-css-0' href='styles/animated-weather-icons.css' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='comcastify-toggle-css-0' href='styles/comcastify-toggle.css' type='text/css'
         media='all' />
     <script type='text/javascript' src='https://s.aolcdn.com/ads/adsWrapper.js'></script>
     <script type='text/javascript'>
@@ -24,6 +22,9 @@
 <body>
 
     <div id="root">
+        <audio autoplay preload="auto">
+            <source src='audio/dial-up-modem-01.mp3'>
+        </audio>
         <div>
             <div class="container--tc-magazine" style="margin-top: 285px;"><svg class="hidden-defs">
                     <defs>
@@ -53,8 +54,7 @@
                     </defs>
                 </svg>
                 <div></div>
-                <div class="ad-unit ad-unit__billboard ad-unit--fixed"
-                    style="top: 0px;">
+                <div class="ad-unit ad-unit__billboard ad-unit--fixed d-flex" style="top: 0px;justify-content: center;z-index:5;">
                     <div class="ad-unit__ad ad-unit__leaderboard" id="tc-ad-leaderboard"><img
                             src="images/homebrewad.jpg" alt="" style="width=970; height=250">
                         <div id=" atwAdFrame0EAN"
@@ -70,7 +70,8 @@
                 <header class="site-navigation">
                     <div class="desktop-nav" style="top: 0px; height: 581px;">
                         <div class="desktop-nav__header">
-                            <div class="logo"><a href="/"><img src="images/250x50logo.png" alt="" style="width:970; height:250; z-index:1;"></a></div>
+                            <div class="logo"><a href="/"><img src="images/250x50logo.png" alt=""
+                                        style="width:970; height:250; z-index:1;"></a></div>
                         </div>
                         <div class="desktop-nav__login">
                             <div class="navigation__login-links"><a
@@ -88,76 +89,75 @@
                                 <li class="menu__item "><a href="#">Audio</a></li>
                                 <li class="menu__item "><a href="#">—</a></li>
                                 <li class="menu__item "><a href="#">Stuff</a></li>
-                                <li class="menu__item "><a href="#">Pay Us</a>
-                                </li>
+                                <li class="menu__item "><a href="#">Pay Us</a></li>
                                 <li class="menu__item "><a href="#">Join Our Cult</a></li>
                                 <li class="menu__item "><a href="#">More</a></li>
                             </ul>
                             <ul class="menu my-lists-container"></ul>
-
-                                <!-- Facebook -->
-                                <a class="resp-sharing-button__link" href="https://facebook.com" target="_blank"
-                                    rel="noopener" aria-label="Share on Facebook">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
-                                            style="width: 22%">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
-                                            </svg>
-                                        </div>
+                            <ul class="menu navigation__main-menu">
+                            <!-- Facebook -->
+                            <a class="resp-sharing-button__link" href="https://facebook.com" target="_blank"
+                                rel="noopener" aria-label="Share on Facebook">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                        style="width: 22%">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+                            </a>
 
-                                <!-- Twitter -->
-                                <a class="resp-sharing-button__link" href="https://twitter.com" target="_blank"
-                                    rel="noopener" aria-label="Share on Twitter">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
-                                            style="width: 22%">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
-                                            </svg>
-                                        </div>
+                            <!-- Twitter -->
+                            <a class="resp-sharing-button__link" href="https://twitter.com" target="_blank"
+                                rel="noopener" aria-label="Share on Twitter">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                        style="width: 22%">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+                            </a>
 
-                                <!-- Google+ -->
-                                <a class="resp-sharing-button__link" href="https://plus.google.com" target="_blank"
-                                    rel="noopener" aria-label="Share on Google+">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--google resp-sharing-button--large">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
-                                            style="width: 22%">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3" />
-                                            </svg>
-                                        </div>
+                            <!-- Google+ -->
+                            <a class="resp-sharing-button__link" href="https://plus.google.com" target="_blank"
+                                rel="noopener" aria-label="Share on Google+">
+                                <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--large">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                        style="width: 22%">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3" />
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+                            </a>
 
-                                <!-- Pinterest -->
-                                <a class="resp-sharing-button__link" href="https://pinterest.com/" target="_blank"
-                                    rel="noopener" aria-label="Share on Pinterest">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid"
-                                            style="width: 22%">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z" />
-                                            </svg>
-                                        </div>
+                            <!-- Pinterest -->
+                            <a class="resp-sharing-button__link" href="https://pinterest.com/" target="_blank"
+                                rel="noopener" aria-label="Share on Pinterest">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid"
+                                        style="width: 22%">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z" />
+                                        </svg>
                                     </div>
-                                </a>
+                                </div>
+                            </a>
+                        </ul>                            
                         </div>
                     </div>
                 </header>
@@ -188,7 +188,7 @@
                                     <div class="mini-view">
                                         <article class="mini-view__item mini-item--unread">
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">jQuery
+                                                    href="#">jQuery
                                                     teams up with Jay-Z to create the hit single $onclick</a>
                                             </h3>
                                             <p class="fi-main-block__byline"><span><a aria-label="Posts by Brian Heater"
@@ -196,7 +196,7 @@
                                         </article>
                                         <article class="mini-view__item mini-item--unread">
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/21/uber-eats-pass-subscription/">Machines stop
+                                                    href="#">Machines stop
 
                                                     learning, can't get a job, end up homeless</a></h3>
 
@@ -216,16 +216,15 @@
                                                     </svg></div>
                                                 <div
                                                     class="premium-content__label__text gradient-text gradient-text--gold-gradient">
-                                                    Extra Crunch</div>
+                                                    Extra Overflow</div>
                                             </div>
                                             <h3 class="mini-view__item__title"><a
-                                                    href="/2019/05/21/the-exit-getarounds-300m-roadtrip/">Python bites
-                                                    developer</a></h3>
+                                                    href="#">Google's V8 engine runs on V8 vegetable juice</a></h3>
                                             <p class="fi-main-block__byline"><span><a aria-label="Posts by Lucas Matney"
                                                         href="/author/lucas-matney/">Richard Baconsizer</a></span></p>
                                         </article>
                                         <article class="mini-view__item mini-item--unread">
-                                            <h3 class="mini-view__item__title"><a href="/2019/05/21/deligram/">Kim
+                                            <h3 class="mini-view__item__title"><a href="#">Kim
                                                     Kardashian releases new tech focused brand "Back-End
                                                     Development"</a></h3>
 
@@ -273,7 +272,7 @@
                                         </footer>
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/review-of-elon-musks-dc-to-baltimore-loop-system-reveals-safety-concerns/">Mark
+                                                    href="#">Mark
                                                     Wahlberg partners with Tech Ladies, learns to type...(sort of)</a>
                                             </h2>
                                             <div class="post-block__content">
@@ -293,7 +292,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/nectar-bar-inventory/">Django Unchained</a></h2>
+                                                    href="#">Django Unchained</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T18:50:37.000Z">39 mins ago</time><span
@@ -312,11 +311,11 @@
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png">
+                                                        srcset="images/Django_unchained.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Django_unchained.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="images/Django_unchained.jpg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/Nectar-Bar-Inventory-sonar.png?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Django_unchained.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Django_unchained.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Django_unchained.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -324,7 +323,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/amazon-has-turned-warehouse-tasks-into-a-literal-game/">JS
+                                                    href="#">JS
                                                     gets a C++ on quiz</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
@@ -344,11 +343,11 @@
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg">
+                                                        srcset="images/Jquery_quiz.png?w=200&amp;h=200&amp;crop=1 1x, images/Jquery_quiz.png?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="https://lh3.googleusercontent.com/Ac1Ydxx18ZptkLX-YjED81_5BtU-vGsLVyrEd__iHKQbazQsR3Qr04XaZu3qBSydwVI">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2018/12/GettyImages-825338322.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Jquery_quiz.png?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Jquery_quiz.png?w=200&amp;h=107&amp;crop=1 200w, images/Jquery_quiz.png?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -376,10 +375,10 @@
                                                     </svg></div>
                                                 <div
                                                     class="premium-content__label__text gradient-text gradient-text--gold-gradient">
-                                                    Extra Crunch</div>
+                                                    Extra Overflow</div>
                                             </div>
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/moira-weigel-on-the-internet-of-women-part-two/">Node
+                                                    href="#">Node
                                                     develops nodules, goes to a specialist</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
@@ -399,11 +398,11 @@
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg">
+                                                        srcset="images/Node_nodules.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="images/Node_nodules.jpg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-1061262324-e1558547871141.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Node_nodules.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Node_nodules.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Node_nodules.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -411,7 +410,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/seven-years-later-the-ouya-is-dead-for-real/">jQuery
+                                                    href="#">jQuery
                                                     arrested for appendingChild to a body</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
@@ -433,11 +432,11 @@
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg">
+                                                        srcset="images/Jquery_child.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Jquery_child.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="images/Jquery_child.jpg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2013/12/ouya.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Jquery_child.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Jquery_child.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Jquery_child.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -445,7 +444,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/subscription-fatigue-hasnt-hit-yet/">Coding
+                                                    href="#">Coding
                                                     bootcamps partner with military for more authentic experience</a>
                                             </h2>
 
@@ -454,24 +453,22 @@
                                                         datetime="2019-05-22T17:29:07.000Z">2 hours ago</time><span
                                                         class="river-byline__authors"><span><a
                                                                 aria-label="Posts by Sarah Perez"
-                                                                href="/author/sarah-perez/">Sarah
-                                                                Perez</a></span></span></div>
+                                                                href="/author/sarah-perez/">Colin
+                                                                Powell</a></span></span></div>
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>U.S. consumers are still embracing subscriptions. More than a third (34%)
-                                                of Americans say they believe they’ll increase the number of
-                                                subscription services they use over the next two years, ...</p>
+                                            <p>Coding bootcamp students may get more than they bargained for now that the bootcamps have joined the military. Not only will students learn their stacks, they'll get stacked over the four months...</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg">
+                                                        srcset="images/Military.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Military.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="images/Military.jpgg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-870681612.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Military.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Military.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Military.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -479,65 +476,14 @@
                                     <div class="yap-ad-container-div">
                                         <div class="yap-ad-05c0b21d-e742-494d-ac59-474e3feaa4b8"></div>
                                     </div>
-                                    <article class="post-block post-block--image post-block--unread">
-                                        <header class="post-block__header">
-                                            <div class="premium-content__label">
-                                                <div class="premium-content__label__icon"><svg
-                                                        class="icon icon--extra-crunch-e icon--gold-gradient "
-                                                        viewBox="0 0 20 20" version="1.1" aria-labelledby="title">
-                                                        <title>extra-crunch-e</title>
-                                                        <path
-                                                            d="M0 12.667V3.333h2.333v2.334H7V8H2.333v2.333H7v2.334H0zM2.333 1H7v2.333H2.333V1z">
-                                                        </path>
-                                                    </svg></div>
-                                                <div
-                                                    class="premium-content__label__text gradient-text gradient-text--gold-gradient">
-                                                    Extra Crunch</div>
-                                            </div>
-                                            <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/startups-locating-in-sf-and-africa-to-win-global-fintech/">These
-                                                    startups are locating in SF and Africa to win in global fintech</a>
-                                            </h2>
-                                            <div class="post-block__meta">
-                                                <div class="river-byline"><time class="river-byline__time"
-                                                        datetime="2019-05-22T17:12:51.000Z">2 hours ago</time><span
-                                                        class="river-byline__authors"><span><a
-                                                                aria-label="Posts by Jake Bright"
-                                                                href="/author/jake-bright/">Jake
-                                                                Bright</a></span></span></div>
-                                            </div>
-                                        </header>
-                                        <div class="post-block__content">
-                                            <p>To become a global fintech player, locate your company in San Francisco
-                                                and Africa. That’s the approach of payments company Flutterwave, digital
-                                                lending startup Mines, and mobile-money venture Chip...</p>
-                                        </div>
-                                        <footer class="post-block__footer">
-                                            <figure class="post-block__media">
-                                                <picture>
-                                                    <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg">
-                                                    <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/SF-to-Afrca.jpg?w=430&amp;h=230&amp;crop=1 430w">
-                                                </picture>
-                                            </figure>
-                                        </footer>
-                                    </article><a href="/events/disrupt-sf-2019/tickets">
                                         <div class="homepage__event-promo">
                                             <div class="event-promo__header">
                                                 <div class="logo"><svg width="60px" height="30px" viewBox="0 0 60 30"
                                                         version="1.1" style="display: block;">
-                                                        <title>TechCrunch</title>
-                                                        <g mask="url(#tc-logo)">
-                                                            <rect x="0" y="0" width="60" height="30" fill="#fff"></rect>
-                                                            <rect id="logo-gradient" class="navigation__logo-gradient"
-                                                                x="0" y="0" width="60" height="30" fill="white"></rect>
-                                                        </g>
+                                                        <title>ClickChella</title>
                                                     </svg></div>
                                                 <div class="event-info">
-                                                    <h2 class="event-title">Disrupt SF 2019</h2><span
+                                                    <h2 class="event-title">ClickChella 2019</h2><span
                                                         class="event-date">Oct
                                                         2 - 4</span>
                                                 </div>
@@ -562,8 +508,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/googles-lead-eu-regulator-opens-formal-privacy-probe-of-its-adtech/">Google’s
-                                                    lead EU regulator opens formal privacy probe of its adtech</a></h2>
+                                                    href="#">Bill Gates Jumps Over Chair, Net Worth Increases 1.8 Billion</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T17:00:07.000Z">2 hours ago</time><span
@@ -574,19 +519,17 @@
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>Google’s lead data regulator in Europe has opened a formal investigation
-                                                into its processing of personal data in the context of its online Ad
-                                                Exchange, TechCrunch has learnt. This follows a p...</p>
+                                            <p>Bill Gates may be 63 years old, but he can still jump chairs just as efficiently as he did in his mid-40s, but for a lot more money. If only Microsoft kept as relevant as Bill Gates jumping over chairs...</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg">
+                                                        srcset="images/BillGates_chair.gif?w=200&amp;h=200&amp;crop=1 1x, images/BillGates_chair.gif?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="images/BillGates_chair.gif">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_323833889.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/BillGates_chair.gif?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/BillGates_chair.gif?w=200&amp;h=107&amp;crop=1 200w, images/BillGates_chair.gif?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -596,7 +539,7 @@
                                             <header class="newsletter-signup__header">
                                                 <h3 class="newsletter-signup__title">Sign up for Newsletters</h3>
                                                 <p class="newsletter-signup__all-link"><a
-                                                        href="http://link.techcrunch.com/join/134/signup-all-newsletters"
+                                                        href="#"
                                                         target="_blank">See all newsletters<span
                                                             class="screen-reader-text">(opens in a new
                                                             window)</span></a></p>
@@ -609,7 +552,7 @@
                                                                 class="form-field__input form-field__input--checkbox"
                                                                 id="checkbox-daily" name="newsletters" type="checkbox"
                                                                 value="crunchdaily"><label class="checkbox-field-label"
-                                                                for="checkbox-daily">The Daily Crunch</label></div>
+                                                                for="checkbox-daily">The Daily Overflow</label></div>
                                                         <div class="form-field__checkbox-wrapper"><input
                                                                 class="form-field__input form-field__input--checkbox"
                                                                 id="checkbox-weekly" name="newsletters" type="checkbox"
@@ -620,7 +563,7 @@
                                                                 id="checkbox-cb-daily" name="newsletters"
                                                                 type="checkbox" value="crunchbase"><label
                                                                 class="checkbox-field-label"
-                                                                for="checkbox-cb-daily">Crunchbase Daily</label></div>
+                                                                for="checkbox-cb-daily">DevOverflow Daily</label></div>
                                                     </div>
                                                     <fieldset
                                                         class="form-field form-field--email form-field--default form-field--required">
@@ -633,52 +576,50 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ad-unit__ad ad-unit__native" id="tc-ad-native2"><iframe
-                                            itemscope="" itemtype="https://schema.org/WPAdBlock" tabindex="-1"
-                                            width="859" height="250" title="Ad" marginwidth="0" marginheight="0"
+                                    <div class="ad-unit__ad ad-unit__native" id="tc-ad-native2"><iframe itemscope=""
+                                            itemtype="https://schema.org/WPAdBlock" tabindex="-1" width="859"
+                                            height="250" title="Ad" marginwidth="0" marginheight="0"
                                             allowtransparency="true" frameborder="0" scrolling="no"
                                             sandbox="allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
                                             id="atwAdFrame3" name="atwAdFrame3" banid=""
                                             style="width: 0px; height: 0px; display: none;"></iframe></div>
-                                    <article class="post-block post-block--image post-block--unread">
-                                        <header class="post-block__header">
-                                            <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/daily-crunch-macbook-keyboard/">Daily Crunch: New
-                                                    MacBook Pros have a keyboard fix</a></h2>
-                                            <div class="post-block__meta">
-                                                <div class="river-byline"><time class="river-byline__time"
-                                                        datetime="2019-05-22T16:57:03.000Z">3 hours ago</time><span
-                                                        class="river-byline__authors"><span><a
-                                                                aria-label="Posts by Anthony Ha"
-                                                                href="/author/anthony-ha/">Anthony Ha</a></span></span>
-                                                </div>
-                                            </div>
-                                        </header>
-                                        <div class="post-block__content">
-                                            <p>The Daily Crunch is TechCrunch’s roundup of our biggest and most
-                                                important stories. If you’d like to get this delivered to your inbox
-                                                every day at around 9am Pacific, you can subscribe ...</p>
-                                        </div>
-                                        <footer class="post-block__footer">
-                                            <figure class="post-block__media">
-                                                <picture>
-                                                    <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg">
-                                                    <img alt="Macbook pro illuminated keyboard"
-                                                        sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-958830422.jpg?w=430&amp;h=230&amp;crop=1 430w">
-                                                </picture>
-                                            </figure>
-                                        </footer>
-                                    </article>
-                                    <div class="upcoming-events">
+                                            <article class="post-block post-block--image post-block--unread">
+                                                    <header class="post-block__header">
+                                                        <h2 class="post-block__title"><a class="post-block__title__link"
+                                                                href="#">Python bites
+                                                                developer</a>
+                                                        </h2>
+                                                        <div class="post-block__meta">
+                                                            <div class="river-byline"><time class="river-byline__time"
+                                                                    datetime="2019-05-22T17:12:51.000Z">2 hours ago</time><span
+                                                                    class="river-byline__authors"><span><a
+                                                                            aria-label="Posts by Jake Bright"
+                                                                            href="/author/jake-bright/">Jake
+                                                                            Bright</a></span></span></div>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-block__content">
+                                                        <p>This weekend, a developer was working hard to do what he does best. Win against Python. This particular battle ended in him being bitten by the Python during a valiant effort to tame the beast...</p>
+                                                    </div>
+                                                    <footer class="post-block__footer">
+                                                        <figure class="post-block__media">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="images/Snake.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Snake.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                                    media="images/Snake.jpg">
+                                                                <img alt="" sizes="(max-width: 430px) 100vw, 430px"
+                                                                    src="images/Snake.jpg?w=430&amp;h=230&amp;crop=1"
+                                                                    srcset="images/Snake.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Snake.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                                                            </picture>
+                                                        </figure>
+                                                    </footer>
+                                                </article>
+                                                <div class="upcoming-events">
                                         <h3 class="upcoming-events__heading">Where we’ll be next</h3>
                                         <div class="upcoming-events__list">
                                             <div class="slick-initialized slick-slider">
                                                 <div class="slick-list">
-                                                    <div class="slick-track"
+                                                    <div class="slick-track d-flex"
                                                         style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 2626px;">
                                                         <div data-index="0" class="slick-slide slick-active"
                                                             tabindex="-1" style="outline: none; width: 202px;">
@@ -688,8 +629,8 @@
                                                                         <div
                                                                             class="gradient-text gradient-text--green-gradient">
                                                                             <a class="upcoming-events__link"
-                                                                                href="/events/tc-sessions-mobility-2019/"><span>TC
-                                                                                    Sessions: Mobility 2019</span></a>
+                                                                                href="#"><span>Click
+                                                                                    Chella</span></a>
                                                                         </div>
                                                                     </h3><span class="upcoming-events__item__date">Jul
                                                                         10</span><span
@@ -699,11 +640,12 @@
                                                                 <div class="upcoming-events__item__footer"><a
                                                                         class="button button--green-gradient button--primary"
                                                                         target=""
-                                                                        href="/events/tc-sessions-mobility-2019/#tickets">Buy
+                                                                        href="#">Buy
                                                                         Tickets</a><a
                                                                         class="button button--black button--secondary"
-                                                                        href="http://info.techcrunch.com/SponsorshipsInterest.html"
-                                                                        target="_blank">Be a Sponsor</a></div>
+                                                                        href="#"
+                                                                        target="_blank">Be a Sponsor</a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div data-index="1" class="slick-slide slick-active"
@@ -714,8 +656,9 @@
                                                                         <div
                                                                             class="gradient-text gradient-text--green-gradient">
                                                                             <a class="upcoming-events__link"
-                                                                                href="/events/14th-annual-summer-party-2019/"><span>14th
-                                                                                    Annual Summer Party</span></a></div>
+                                                                                href="#"><span>NxNW
+                                                                                <br/><br/>
+                                                                                 </span></a></div>
                                                                     </h3><span class="upcoming-events__item__date">Jul
                                                                         25</span><span
                                                                         class="upcoming-events__item__location">San
@@ -724,10 +667,10 @@
                                                                 <div class="upcoming-events__item__footer"><a
                                                                         class="button button--green-gradient button--primary"
                                                                         target=""
-                                                                        href="/events/14th-annual-summer-party-2019/#tickets">Buy
+                                                                        href="#">Buy
                                                                         Tickets</a><a
                                                                         class="button button--black button--secondary"
-                                                                        href="http://info.techcrunch.com/SponsorshipsInterest.html"
+                                                                        href="#"
                                                                         target="_blank">Be a Sponsor</a></div>
                                                             </div>
                                                         </div>
@@ -739,8 +682,8 @@
                                                                         <div
                                                                             class="gradient-text gradient-text--green-gradient">
                                                                             <a class="upcoming-events__link"
-                                                                                href="/events/tc-sessions-enterprise-2019/"><span>TC
-                                                                                    Sessions: Enterprise</span></a>
+                                                                                href="#"><span>Comic
+                                                                                    Con</span></a>
                                                                         </div>
                                                                     </h3><span class="upcoming-events__item__date">Sep
                                                                         5</span><span
@@ -750,10 +693,10 @@
                                                                 <div class="upcoming-events__item__footer"><a
                                                                         class="button button--green-gradient button--primary"
                                                                         target=""
-                                                                        href="/events/tc-sessions-enterprise-2019/#tickets">Buy
+                                                                        href="#">Buy
                                                                         Tickets</a><a
                                                                         class="button button--black button--secondary"
-                                                                        href="http://info.techcrunch.com/SponsorshipsInterest.html"
+                                                                        href="#"
                                                                         target="_blank">Be a Sponsor</a></div>
                                                             </div>
                                                         </div>
@@ -765,12 +708,13 @@
                                                                         <div
                                                                             class="gradient-text gradient-text--green-gradient">
                                                                             <a class="upcoming-events__link"
-                                                                                href="/events/disrupt-sf-2019/"><span>Disrupt
-                                                                                    SF 2019</span></a></div>
+                                                                                href="#"><span>Burning
+                                                                                    CoderMan</span></a>
+                                                                        </div>
                                                                     </h3><span class="upcoming-events__item__date">Oct 2
                                                                         - 4</span><span
                                                                         class="upcoming-events__item__location">San
-                                                                        Francisco</span>
+                                                                        Francisco, USA</span>
                                                                 </div>
                                                                 <div class="upcoming-events__item__footer"><a
                                                                         class="button button--green-gradient button--primary"
@@ -779,35 +723,58 @@
                                                                         Tickets</a><a
                                                                         class="button button--black button--secondary"
                                                                         href="http://info.techcrunch.com/SponsorshipsInterest.html"
-                                                                        target="_blank">Be a Sponsor</a></div>
+                                                                        target="_blank">Be a Sponsor</a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div data-index="4" class="slick-slide" tabindex="-1"
-                                                            style="outline: none; width: 202px;">
-                                                            <div class="upcoming-events__item">
-                                                                <div class="upcoming-events__item__body">
-                                                                    <h3 class="upcoming-events__item__title">
-                                                                        <div
-                                                                            class="gradient-text gradient-text--green-gradient">
-                                                                            <a class="upcoming-events__link"
-                                                                                href="/events/disrupt-berlin-2019/"><span>Disrupt
-                                                                                    Berlin 2019</span></a></div>
-                                                                    </h3><span class="upcoming-events__item__date">Dec
-                                                                        11 - 12</span><span
-                                                                        class="upcoming-events__item__location">Berlin,
-                                                                        Germany</span>
-                                                                </div>
-                                                                <div class="upcoming-events__item__footer"><a
-                                                                        class="button button--green-gradient button--primary"
-                                                                        target=""
-                                                                        href="/events/disrupt-berlin-2019/">Learn
-                                                                        More</a><a
-                                                                        class="button button--black button--secondary"
-                                                                        href="http://info.techcrunch.com/SponsorshipsInterest.html"
-                                                                        target="_blank">Be a Sponsor</a></div>
+                                                        style="outline: none; width: 202px;">
+                                                        <div class="upcoming-events__item">
+                                                            <div class="upcoming-events__item__body">
+                                                                <h3 class="upcoming-events__item__title">
+                                                                    <div
+                                                                        class="gradient-text gradient-text--green-gradient">
+                                                                        <a class="upcoming-events__link"
+                                                                            href="/events/disrupt-berlin-2019/"><span>Disrupt
+                                                                                Berlin</span></a></div>
+                                                                </h3><span class="upcoming-events__item__date">Dec
+                                                                    11 - 12</span><span
+                                                                    class="upcoming-events__item__location">Berlin,<br/>
+                                                                    Germany</span>
                                                             </div>
-                                                        </div>
+                                                            <div class="upcoming-events__item__footer"><a
+                                                                    class="button button--green-gradient button--primary"
+                                                                    target=""
+                                                                    href="#">Learn
+                                                                    More</a><a
+                                                                    class="button button--black button--secondary"
+                                                                    href="#"
+                                                                    target="_blank">Be a Sponsor</a></div>
+                                                        </div>                                                                                                             
                                                     </div>
+                                                    <div data-index="5" class="slick-slide" tabindex="-1"
+                                                    style="outline: none; width: 202px;">
+                                                    <div class="upcoming-events__item">
+                                                        <div class="upcoming-events__item__body">
+                                                            <h3 class="upcoming-events__item__title">
+                                                                <div
+                                                                    class="gradient-text gradient-text--green-gradient">
+                                                                    <a class="upcoming-events__link"
+                                                                        href="#"><span>HornHub SantaCon</span></a></div>
+                                                            </h3><span class="upcoming-events__item__date">Dec
+                                                                24</span><span
+                                                                class="upcoming-events__item__location">Houston,<br/>
+                                                                USA</span>
+                                                        </div>
+                                                        <div class="upcoming-events__item__footer"><a
+                                                                class="button button--green-gradient button--primary"
+                                                                target=""
+                                                                href="#">Learn
+                                                                More</a><a
+                                                                class="button button--black button--secondary"
+                                                                href="#"
+                                                                target="_blank">Be a Sponsor</a></div>
+                                                    </div>                                                       
                                                 </div>
                                             </div>
                                         </div>
@@ -815,8 +782,7 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/amazon-reject-facial-recognition-proposals/">Amazon
-                                                    shareholders reject facial recognition sale ban to governments</a>
+                                                    href="#">Netflix Stops Chilling, Starts Making Money</a>
                                             </h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
@@ -828,19 +794,17 @@
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>Amazon shareholders have rejected two proposals that would have requested
-                                                the company not to sell its facial recognition technology to government
-                                                customers. The breakdown of the votes is not immedi...</p>
+                                            <p>Netflix has finally stopped binge watching it's own shows and has begun focusing on their bottom line. Unsurprisingly, they've actually made money for the first time since it's inception...</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif">
+                                                        srcset="images/Netflix_chill.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Netflix_chill.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="https://www.sayitwithacondom.com//media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/n/e/netflix-and-chill-condom-foil_2.jpg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/facial-recognition-tech.gif?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="images/Netflix_chill.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="images/Netflix_chill.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Netflix_chill.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -848,31 +812,28 @@
                                     <article class="post-block post-block--image post-block--unread">
                                         <header class="post-block__header">
                                             <h2 class="post-block__title"><a class="post-block__title__link"
-                                                    href="/2019/05/22/duckduckgo-founder-gabriel-weinberg-is-coming-to-disrupt/">DuckDuckGo
-                                                    founder Gabriel Weinberg is coming to Disrupt</a></h2>
+                                                    href="#">Apple Releases Same MacBook, Charges $1K More</a></h2>
                                             <div class="post-block__meta">
                                                 <div class="river-byline"><time class="river-byline__time"
                                                         datetime="2019-05-22T16:31:48.000Z">3 hours ago</time><span
                                                         class="river-byline__authors"><span><a
                                                                 aria-label="Posts by Natasha Lomas"
-                                                                href="/author/natasha-lomas/">Natasha
-                                                                Lomas</a></span></span></div>
+                                                                href="/author/natasha-lomas/">Steve
+                                                                Jobless</a></span></span></div>
                                             </div>
                                         </header>
                                         <div class="post-block__content">
-                                            <p>2019 is the year Facebook announced a “pivot to privacy.” At the same
-                                                time, Google is trying to claim that privacy means letting it
-                                                exclusively store and data-mine everything you do onl...</p>
+                                            <p>Apple has officially released it's new line of Macbooks, and they are exactly the same as last years. Exactly. The. Same. But as usual, the new computers are getting a price hike...</p>
                                         </div>
                                         <footer class="post-block__footer">
                                             <figure class="post-block__media">
                                                 <picture>
                                                     <source
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                        media="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png">
+                                                        srcset="https://27kkdqbrpxwygunh-zippykid.netdna-ssl.com/wp-content/uploads/2014/10/AppleMacBook.jpg?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=400&amp;h=400&amp;crop=1 2x"
+                                                        media="https://27kkdqbrpxwygunh-zippykid.netdna-ssl.com/wp-content/uploads/2014/10/AppleMacBook.jpg">
                                                     <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                        src="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=430&amp;h=230&amp;crop=1"
-                                                        srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.16.04-PM.png?w=430&amp;h=230&amp;crop=1 430w">
+                                                        src="https://27kkdqbrpxwygunh-zippykid.netdna-ssl.com/wp-content/uploads/2014/10/AppleMacBook.jpg?w=430&amp;h=230&amp;crop=1"
+                                                        srcset="https://27kkdqbrpxwygunh-zippykid.netdna-ssl.com/wp-content/uploads/2014/10/AppleMacBook.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                                 </picture>
                                             </figure>
                                         </footer>
@@ -1110,32 +1071,29 @@
                                 <article class="post-block post-block--image post-block--unread">
                                     <header class="post-block__header">
                                         <h2 class="post-block__title"><a class="post-block__title__link"
-                                                href="/2019/05/22/invites-are-out-for-apples-june-3-wwdc-keynote-there-will-be-unicorns/">Invites
-                                                are out for Apple’s June 3 WWDC keynote — there will be unicorns</a>
+                                                href="#">Uber Launches New Feature, "Drive Yourself Somewhere"</a>
                                         </h2>
                                         <div class="post-block__meta">
                                             <div class="river-byline"><time class="river-byline__time"
                                                     datetime="2019-05-22T16:22:09.000Z">3 hours ago</time><span
                                                     class="river-byline__authors"><span><a
                                                             aria-label="Posts by Brian Heater"
-                                                            href="/author/brian-heater/">Brian
-                                                            Heater</a></span></span></div>
+                                                            href="/author/brian-heater/">Travis
+                                                            Kalanick</a></span></span></div>
                                         </div>
                                     </header>
                                     <div class="post-block__content">
-                                        <p>Apple’s WWDC keynote invites just went out, with only a couple of weeks
-                                            to spare. The company’s graphic designers appear to be having some fun
-                                            this time out, with a mind-blown rainbow unicorn, losi...</p>
+                                        <p>Uber decided to save money with the new “Drive Yourself” plan. No need to wait on a ride when yours is right around the corner! It doesn’t cost much more to drive for them either...</p>
                                     </div>
                                     <footer class="post-block__footer">
                                         <figure class="post-block__media">
                                             <picture>
                                                 <source
-                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                    media="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png">
+                                                    srcset="https://boygeniusreport.files.wordpress.com/2015/01/uber-water.jpg?quality=98&strip=all&w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=400&amp;h=400&amp;crop=1 2x"
+                                                    media="images/Uber.jpg">
                                                 <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                    src="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1"
-                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-22-at-12.11.30-PM.png?w=430&amp;h=230&amp;crop=1 430w">
+                                                    src="https://boygeniusreport.files.wordpress.com/2015/01/uber-water.jpg?quality=98&strip=all&w=430&amp;h=230&amp;crop=1"
+                                                    srcset="images/Uber.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Uber.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                             </picture>
                                         </figure>
                                     </footer>
@@ -1143,31 +1101,27 @@
                                 <article class="post-block post-block--image post-block--unread">
                                     <header class="post-block__header">
                                         <h2 class="post-block__title"><a class="post-block__title__link"
-                                                href="/2019/05/22/reserve-your-demo-table-for-tc-sessions-mobility-2019/">Reserve
-                                                your demo table for TC Sessions: Mobility 2019</a></h2>
+                                                href="#">Amazon Turns Off A/C In Warehouse, Saves On Shipping Costs</a></h2>
                                         <div class="post-block__meta">
                                             <div class="river-byline"><time class="river-byline__time"
                                                     datetime="2019-05-22T16:00:32.000Z">3 hours ago</time><span
                                                     class="river-byline__authors"><span><a
                                                             aria-label="Posts by Emma Comeau"
-                                                            href="/author/emma-comeau/">Emma
-                                                            Comeau</a></span></span></div>
+                                                            href="/author/emma-comeau/">Jeff Besos</a></span></span></div>
                                         </div>
                                     </header>
                                     <div class="post-block__content">
-                                        <p>Early-stage startup ingenuity is one of the driving forces shaping the
-                                            rapid, radical changes taking place in mobility and transportation. Come
-                                            July 10, TechCrunch will host more than 1,000 movers,...</p>
+                                        <p>With competition being tighter than ever, Amazon has been turning to some more unconventional meathods to save on shipping cost. They are turning off AC is all warehouses to save $.03 per package shipped...</p>
                                     </div>
                                     <footer class="post-block__footer">
                                         <figure class="post-block__media">
                                             <picture>
                                                 <source
-                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=200&amp;crop=1 1x, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=400&amp;h=400&amp;crop=1 2x"
-                                                    media="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png">
+                                                    srcset="images/Amazon_warehouse.jpg?w=200&amp;h=200&amp;crop=1 1x, images/Amazon_warehouse.jpg?w=400&amp;h=400&amp;crop=1 2x"
+                                                    media="https://images.gawker.com/yrkoqgh2pvhbssqkbxol/c_scale,fl_progressive,q_80,w_800.jpg">
                                                 <img alt="" sizes="(max-width: 430px) 100vw, 430px"
-                                                    src="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1"
-                                                    srcset="https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/05/mobility-header-1.png?w=430&amp;h=230&amp;crop=1 430w">
+                                                    src="images/Amazon_warehouse.jpg?w=430&amp;h=230&amp;crop=1"
+                                                    srcset="images/Amazon_warehouse.jpg?w=200&amp;h=107&amp;crop=1 200w, images/Amazon_warehouse.jpg?w=430&amp;h=230&amp;crop=1 430w">
                                             </picture>
                                         </figure>
                                     </footer>
@@ -1203,20 +1157,18 @@
             <footer class="site-footer">
                 <div class="wrap">
                     <ul class="menu site-footer__menu">
-                        <li class="menu__item "><a href="/">TechCrunch</a></li>
+                        <li class="menu__item "><a href="/">DevOverflow</a></li>
                         <li class="menu__item "><a
-                                href="https://policies.oath.com/xw/en/oath/privacy/intl/index.html">Privacy
+                                href="#">Privacy
                                 Policy</a></li>
-                        <li class="menu__item "><a href="http://adinfo.aol.com/about-our-ads/">About Our Ads</a>
+                        <li class="menu__item "><a href="#">About Our Ads</a>
                         </li>
-                        <li class="menu__item "><a href="/pages/code-of-conduct/">Code of Conduct</a></li>
+                        <li class="menu__item "><a href="#">Code of Conduct</a></li>
                         <li class="menu__item "><a
-                                href="https://policies.oath.com/xw/en/oath/terms/otos/index.html">Terms of
+                                href="#">Terms of
                                 Service</a></li>
                     </ul>
-                    <p><span>© 2013-2019 Verizon Media. All rights reserved. </span><span>Powered by <a target="_blank"
-                                href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit">WordPress
-                                VIP<span class="screen-reader-text">(opens in a new window)</span></a>. Fonts by <a
+                    <p><span>© 2013-2019 Verizon Media. All rights reserved. </span><span>Fonts by <a
                                 target="_blank" href="https://typekit.com/">TypeKit<span
                                     class="screen-reader-text">(opens in a new window)</span></a>.</span></p>
                 </div>
@@ -1234,7 +1186,20 @@
     <script type='text/javascript' src='js/comcastify.js'></script>
     <!-- remove AdChoices overlay -->
     <script type='text/javascript' src='js/remove-adchoices.js'></script>
-
+    <!-- play modem dialup sound on page load -->
+    <script>
+        document.onload = function(modemDialup) {
+            var modemDialup = new Audio('audio/dial-up-modem-01.mp3'); // buffers automatically when created 
+            modemDialup.loop = false;
+            modemDialup.currentTime = 0;
+            modemDialup.load();
+            modemDialup.play();
+        }
+    </script>
+    <!-- alert user about slowing down webpage loading -->
+    <script type='text/javascript'>
+        setTimeout(function(){ alert("We've detected that you're a slow junior developer and have therefore slowed down the loading of this page. \n \n You're welcome!"); }, 8000);
+</script>
     <script>
         window.onload = comcastifyjs.fixMyImagesLoadingSoFast({
             boxColor: 'gray',
