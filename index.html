@@ -22,6 +22,9 @@
 <body>
 
     <div id="root">
+        <audio autoplay preload="auto">
+            <source src='audio/dial-up-modem-01.mp3'>
+        </audio>
         <div>
             <div class="container--tc-magazine" style="margin-top: 285px;"><svg class="hidden-defs">
                     <defs>
@@ -1183,7 +1186,20 @@
     <script type='text/javascript' src='js/comcastify.js'></script>
     <!-- remove AdChoices overlay -->
     <script type='text/javascript' src='js/remove-adchoices.js'></script>
-
+    <!-- play modem dialup sound on page load -->
+    <script>
+        document.onload = function(modemDialup) {
+            var modemDialup = new Audio('audio/dial-up-modem-01.mp3'); // buffers automatically when created 
+            modemDialup.loop = false;
+            modemDialup.currentTime = 0;
+            modemDialup.load();
+            modemDialup.play();
+        }
+    </script>
+    <!-- alert user about slowing down webpage loading -->
+    <script type='text/javascript'>
+        setTimeout(function(){ alert("We've detected that you're a slow junior developer and have therefore slowed down the loading of this page. \n \n You're welcome!"); }, 8000);
+</script>
     <script>
         window.onload = comcastifyjs.fixMyImagesLoadingSoFast({
             boxColor: 'gray',

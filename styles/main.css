@@ -12935,7 +12935,8 @@ fieldset {
     color: #777;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    text-transform: capitalize
+    text-transform: capitalize;
+    word-break: normal;
 }
 
 @media (min-width: 1440px) {
