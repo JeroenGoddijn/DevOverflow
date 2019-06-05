@@ -7,8 +7,10 @@ Meet DevOverflow, similar to The Onion for developers, created for the sole purp
 * Sabrina Goldfarb
 * Garrett Weaver
 
+## Preview
 ![DevOverflow Homepage screenshot](https://github.com/JeroenGoddijn/DevOverflow/blob/master/images/screenshot.png "DevOverflow Homepage")
 
+NOTE:
 For a demo, please click here: https://s3.us-east-2.amazonaws.com/mrgoddijn.com/portfolio/projects/DevOverflow/index.html
 You won't be able to see the custom 'coding forecast' (based on Darksky weather API) without CORS browser extension.
 
