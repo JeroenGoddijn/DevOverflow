@@ -7,6 +7,7 @@ Meet DevOverflow, similar to The Onion for developers, created for the sole purp
 * Sabrina Goldfarb
 * Garrett Weaver
 
+![alt text](https://github.com/JeroenGoddijn/DevOverflow/blob/master/images/screenshot.jpg "DevOverflow Homepage")
 ---
 
 # Group Project Kickoff: Wednesday, May 22nd, 2019
