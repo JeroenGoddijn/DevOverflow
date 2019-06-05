@@ -1,3 +1,14 @@
+# DevOverflow
+## Description
+Meet DevOverflow, similar to The Onion for developers, created for the sole purpose of putting a smile on peoples faces, specifically targeting the software developer community. 
+(If you appreciate sarcastic dev-humor please open, if you don’t, please don’t be offended. Our intention is only to make people laugh!)
+## Collaborators
+* Jeroen Goddijn
+* Sabrina Goldfarb
+* Garrett Weaver
+
+---
+
 # Group Project Kickoff: Wednesday, May 22nd, 2019
 ## Description
 * Your task is to form into teams and build something awesome!
